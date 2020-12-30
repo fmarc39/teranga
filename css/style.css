@@ -1,0 +1,21 @@
+.header {
+  background-color: black;
+  height: 100vh;
+  color: white;
+}
+
+.nav__elts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2em;
+  padding: 2rem;
+}
+
+.nav__elts li {
+  margin-right: 3rem;
+}
+/*# sourceMappingURL=style.css.map */

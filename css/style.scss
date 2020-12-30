@@ -1,0 +1,22 @@
+// header 
+
+.header {
+
+    background-color: black;
+    height: 100vh;
+    color: white;
+}
+
+.nav__elts {
+
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    padding: 2rem;
+    li {
+
+        margin-right: 3rem
+    }
+
+
+};
