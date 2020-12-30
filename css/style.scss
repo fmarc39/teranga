@@ -1,9 +1,9 @@
 // global
 
 $marginBottom: 2rem;
-$litleFont: 1rem;
-$medFont: 1.5rem;
-$largeFont: 2rem;
+$litleFont: 1em;
+$medFont: 1.5em;
+$largeFont: 2em;
 
 body {
 
@@ -24,15 +24,20 @@ body {
 
 }
 
+// navbar
+
 .nav__elts {
 
     display: flex;
     justify-content: center;
-    font-size: 2em;
+    align-items: center;
+    font-size: $medFont;
     padding: 2rem;
     li {
 
-        margin-right: 6rem
+        margin-right: 6rem;
+        transition: 0.3s;
+        cursor: pointer;
     }
 
     li:last-child {
@@ -42,42 +47,114 @@ body {
 
 };
 
+.phone, .menu {
+
+    height: 3rem;
+    width: auto;
+}
+
+#phone {
+
+    margin-right: 0rem;
+}
+
+.nav__elts > li:hover {
+
+    transform: scale(1.15);
+}
+
+// Responsive Navbar 
+
+.menu {
+
+    display: none;
+}
+
+
+
 .header-content {
 
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: calc(100vh - 6rem);
+    height: calc(100vh - 8rem);
     margin-bottom: 2rem;
     text-shadow: 2px 2px 4px black;
+    position: relative;
 }
+
+
 .header-maintitle {
 
-    font-size: 10rem;
+    font-size: 10em;
     margin-bottom: 2rem;
 }
 
 .header-p {
 
-    font-size: 1.5rem;
+    font-size: $medFont;
     margin-bottom: 2rem;
     text-align: center;
-    line-height: 2rem;
+    line-height: 2.5rem;
 }
 
 .header-btn {
 
-    padding: 1.5rem 3rem;
+    padding: 1.3rem 3rem;
     border-radius: 5px;
     background-color: white;
     font-size: $medFont;
     border: none;
     margin-bottom: 2rem;
+    font-weight: bold;
     
 }
 
+.header-scroll-icon {
+
+    text-shadow: 2px 2px 4px black;
+    position: absolute;
+    bottom: 2rem;
+    height: 4rem;
+    width: auto;
+    transition-duration: 0.3s;
+    animation-name: blink;
+    animation-duration: 2s;
+    animation: blink 2s steps(100, start) infinite;
+    -webkit-animation: blink 1s steps(5, start) infinite;
+    cursor: pointer;
 
 
+}
+
+// annimation
 
 
+@keyframes blink {
+    from{
+        opacity: .7;
+        bottom: 2.5rem;
+
+    } to {
+        opacity: 1;
+        bottom: 2.3rem;
+    }
+}
+
+.header-scroll-icon:hover {
+
+    transform: scale(1.2);
+    opacity: 0;
+    animation-play-state: paused;
+}
+
+
+@media (max-width: 900px) {
+
+
+    body {
+
+        font-size: 0.8em;
+    }
+}
