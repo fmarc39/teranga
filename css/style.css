@@ -171,7 +171,19 @@ body {
   margin-top: 20px;
   vertical-align: middle;
   width: 100%;
-  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 3px 3px 10px rgba(219, 219, 219, 0.267);
+          box-shadow: 3px 3px 10px rgba(219, 219, 219, 0.267);
+}
+
+.column img:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+#target-img {
+  height: 325px;
 }
 
 .map {
