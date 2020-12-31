@@ -87,7 +87,7 @@ body {
 
 .header-maintitle {
 
-    font-size: 10em;
+    font-size: 9em;
     margin-bottom: 2rem;
 }
 
@@ -108,23 +108,46 @@ body {
     border: none;
     margin-bottom: 2rem;
     font-weight: bold;
+    transition: .2s;
     
+}
+
+.header-btn:hover {
+
+    transform: scale(1.05);
+
 }
 
 .header-scroll-icon {
 
-    text-shadow: 2px 2px 4px black;
+    text-shadow: 3px 3px 5px black;
     position: absolute;
     bottom: 2rem;
     height: 4rem;
     width: auto;
     transition-duration: 0.3s;
     animation-name: blink;
-    animation-duration: 2s;
-    animation: blink 2s steps(100, start) infinite;
-    -webkit-animation: blink 1s steps(5, start) infinite;
+    animation: blink 1.5s steps(100, start) infinite;
+    -webkit-animation: blink 1.5s steps(10, start) infinite;
     cursor: pointer;
 
+}
+
+// Pop-up effect 
+
+[class*="reveal-"] {
+    
+    opacity: 0;
+    transform: translateY(100px);
+    max-width: 100%;
+}
+
+.reveal-visible {
+
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1.2s cubic-bezier(.5, 0, 0, 1);
+    transition-delay: .15s;
 
 }
 
@@ -134,11 +157,11 @@ body {
 @keyframes blink {
     from{
         opacity: .7;
-        bottom: 2.5rem;
+        bottom: 1.5rem;
 
     } to {
         opacity: 1;
-        bottom: 2.3rem;
+        bottom: 1rem;
     }
 }
 
@@ -150,7 +173,7 @@ body {
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
 
 
     body {
@@ -158,3 +181,31 @@ body {
         font-size: 0.8em;
     }
 }
+
+@media (max-width: 900px) {
+
+    body {
+
+        font-size: 0.7em;
+    }
+}
+
+// Gallery
+
+.galery {
+
+    border: 1px solid black;
+    height: 100vh;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(5, 200px) ;
+    grid-template-rows: repeat(5, 200px) ;
+
+    img {
+
+        height: 100px;
+        width: auto;
+    }
+}
+
+

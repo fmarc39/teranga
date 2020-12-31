@@ -75,7 +75,7 @@ body {
 }
 
 .header-maintitle {
-  font-size: 10em;
+  font-size: 9em;
   margin-bottom: 2rem;
 }
 
@@ -94,10 +94,17 @@ body {
   border: none;
   margin-bottom: 2rem;
   font-weight: bold;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.header-btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .header-scroll-icon {
-  text-shadow: 2px 2px 4px black;
+  text-shadow: 3px 3px 5px black;
   position: absolute;
   bottom: 2rem;
   height: 4rem;
@@ -106,32 +113,47 @@ body {
           transition-duration: 0.3s;
   -webkit-animation-name: blink;
           animation-name: blink;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  animation: blink 2s steps(100, start) infinite;
-  -webkit-animation: blink 1s steps(5, start) infinite;
+  animation: blink 1.5s steps(100, start) infinite;
+  -webkit-animation: blink 1.5s steps(10, start) infinite;
   cursor: pointer;
+}
+
+[class*="reveal-"] {
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  max-width: 100%;
+}
+
+.reveal-visible {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: 1.2s cubic-bezier(0.5, 0, 0, 1);
+  transition: 1.2s cubic-bezier(0.5, 0, 0, 1);
+  -webkit-transition-delay: .15s;
+          transition-delay: .15s;
 }
 
 @-webkit-keyframes blink {
   from {
     opacity: .7;
-    bottom: 2.5rem;
+    bottom: 1.5rem;
   }
   to {
     opacity: 1;
-    bottom: 2.3rem;
+    bottom: 1rem;
   }
 }
 
 @keyframes blink {
   from {
     opacity: .7;
-    bottom: 2.5rem;
+    bottom: 1.5rem;
   }
   to {
     opacity: 1;
-    bottom: 2.3rem;
+    bottom: 1rem;
   }
 }
 
@@ -143,9 +165,32 @@ body {
           animation-play-state: paused;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   body {
     font-size: 0.8em;
   }
+}
+
+@media (max-width: 900px) {
+  body {
+    font-size: 0.7em;
+  }
+}
+
+.galery {
+  border: 1px solid black;
+  height: 100vh;
+  background-color: black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (200px)[5];
+      grid-template-columns: repeat(5, 200px);
+  -ms-grid-rows: (200px)[5];
+      grid-template-rows: repeat(5, 200px);
+}
+
+.galery img {
+  height: 100px;
+  width: auto;
 }
 /*# sourceMappingURL=style.css.map */
