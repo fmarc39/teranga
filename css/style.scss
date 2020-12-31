@@ -45,6 +45,7 @@ body {
     align-items: center;
     font-size: $medFont;
     padding: 2rem;
+    overflow: hidden;
     li {
 
         margin-right: 6rem;
@@ -80,6 +81,7 @@ body {
 .menu {
 
     display: none;
+
 }
 
 .header-content {
@@ -98,6 +100,7 @@ body {
 
     font-size: 9em;
     margin-bottom: 2rem;
+    font-weight: bold;
 }
 
 .header-p {
@@ -131,8 +134,8 @@ body {
 
     text-shadow: 3px 3px 5px black;
     position: absolute;
-    bottom: 2rem;
-    height: 4rem;
+    bottom: 2em;
+    height: 4em;
     width: auto;
     transition-duration: 0.3s;
     animation-name: blink;
@@ -181,6 +184,15 @@ body {
     border-radius: 5px;
   }
 
+
+// Menu
+
+.menu-pdf {
+
+    height: 100vh;
+    background-color: black;
+}
+
 // annimation
 
 @keyframes blink {
@@ -216,6 +228,24 @@ body {
 
         font-size: 0.7em;
     }
+
+    .nav__elts {
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .elts {
+        display: none;
+
+    }
+
+    #menu-nav {
+
+        display: initial;
+    }
+
+    
 }
 
 @media (max-width: 800px) {

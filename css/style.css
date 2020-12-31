@@ -34,6 +34,7 @@ body {
           align-items: center;
   font-size: 1.5em;
   padding: 2rem;
+  overflow: hidden;
 }
 
 .nav__elts li {
@@ -88,6 +89,7 @@ body {
 .header-maintitle {
   font-size: 9em;
   margin-bottom: 2rem;
+  font-weight: bold;
 }
 
 .header-p {
@@ -117,8 +119,8 @@ body {
 .header-scroll-icon {
   text-shadow: 3px 3px 5px black;
   position: absolute;
-  bottom: 2rem;
-  height: 4rem;
+  bottom: 2em;
+  height: 4em;
   width: auto;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
@@ -171,6 +173,11 @@ body {
   border-radius: 5px;
 }
 
+.menu-pdf {
+  height: 100vh;
+  background-color: black;
+}
+
 @-webkit-keyframes blink {
   from {
     opacity: .7;
@@ -210,6 +217,20 @@ body {
 @media (max-width: 900px) {
   body {
     font-size: 0.7em;
+  }
+  .nav__elts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .elts {
+    display: none;
+  }
+  #menu-nav {
+    display: initial;
   }
 }
 
