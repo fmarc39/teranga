@@ -172,6 +172,39 @@ body {
           transition-delay: .15s;
 }
 
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: black;
+  padding: 10rem 10rem;
+  color: white;
+}
+
+.services__elts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services img {
+  height: 5rem;
+  width: auto;
+}
+
 .galery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -224,7 +257,6 @@ body {
   background-color: black;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 3rem 2rem;
   color: white;
 }
 
@@ -246,6 +278,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   line-height: 1.5em;
+  padding: 3rem 2rem;
 }
 
 @-webkit-keyframes blink {
@@ -317,7 +350,7 @@ body {
             flex: 50%;
     max-width: 50%;
   }
-  .galery {
+  .galery, .services {
     padding: 5rem 5rem;
   }
 }

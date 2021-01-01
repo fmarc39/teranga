@@ -187,6 +187,33 @@ body {
     transition-delay: .15s;
 }
 
+// Services
+
+.services {
+
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    padding: 10rem 10rem;
+    color: white;
+}
+
+.services__elts {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.services img {
+
+    height: 5rem;
+    width: auto;
+
+
+}
+
 // Gallery
 
 .galery {
@@ -235,7 +262,6 @@ body {
     align-items:flex-start;
     background-color: black;
     flex-wrap: wrap;
-    padding: 3rem 2rem;
     color: white;
 }
 
@@ -255,6 +281,7 @@ body {
     justify-content: center;
     flex-direction: column;
     line-height: 1.5em;
+    padding: 3rem 2rem;
 }
 
 
@@ -330,7 +357,7 @@ body {
         max-width: 50%;    
       }
 
-    .galery {
+    .galery, .services {
 
         padding: 5rem 5rem;
     }
