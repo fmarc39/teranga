@@ -247,6 +247,50 @@ body {
           transform: scale(0.95);
 }
 
+.comments {
+  background-color: black;
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.speech-bubble {
+  height: 450px;
+}
+
+.avatar {
+  height: 100px;
+}
+
+.comments__elts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  padding: 2.5rem;
+}
+
+.comments__avis {
+  color: white;
+  position: absolute;
+  top: 330px;
+  display: inline-block;
+  height: 180px;
+  width: 380px;
+  line-height: 1.5rem;
+}
+
 .map {
   background-color: black;
   width: 100%;

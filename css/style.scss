@@ -252,6 +252,51 @@ body {
     transform: scale(0.95);
   }
 
+// Comments 
+
+.comments {
+
+    background-color: black;
+    height: 800px;
+    display: flex;
+
+
+}
+
+.speech-bubble {
+
+    height: 450px;
+
+}
+
+.avatar {
+
+    height: 100px;
+}
+
+.comments__elts {
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: relative;
+    flex: 50%;
+    padding: 2.5rem;
+
+}
+
+.comments__avis {
+
+    color: white;
+    position: absolute;
+    top: 330px;
+    display: inline-block;
+    height: 180px;
+    width: 380px;
+    line-height: 1.5rem;
+}
+
+
 // Map
 
 .map {
