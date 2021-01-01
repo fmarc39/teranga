@@ -369,11 +369,17 @@ body {
     padding: 2rem 2rem;
     font-size: 1rem;
   }
+  .header-p {
+    font-size: 1.5em;
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 1.5rem;
+  }
 }
 
 @media (max-width: 600px) {
   body {
-    font-size: 0.7em;
+    font-size: 0.65em;
   }
   .column, .services__elts, .footer__elts {
     -webkit-box-flex: 100%;
