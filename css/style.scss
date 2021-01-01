@@ -192,6 +192,7 @@ body {
 .services {
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: black;
     padding: 10rem 10rem;
@@ -204,12 +205,20 @@ body {
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    width: 25%;
+    margin: 2.5rem 0;
+    text-align: center;
+    font-size: $medFont;
+    padding: 1.5rem;
+    line-height: 1.8rem;
+
 }
 
 .services img {
 
     height: 5rem;
     width: auto;
+    margin-bottom: $marginBottom;
 
 
 }
@@ -352,7 +361,7 @@ body {
         font-size: 0.65em;
     }
 
-    .column {
+    .column, .services__elts  {
         flex: 50%;
         max-width: 50%;    
       }
@@ -370,12 +379,12 @@ body {
         font-size: 0.6em;
     }
 
-    .column {
+    .column, .services__elts {
         flex: 100%;
         max-width: 100%;
       }
 
-      .galery {
+      .galery, .services {
 
         padding: 3rem 2rem;
     }

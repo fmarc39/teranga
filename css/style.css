@@ -176,6 +176,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -198,11 +200,18 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 25%;
+  margin: 2.5rem 0;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 1.5rem;
+  line-height: 1.8rem;
 }
 
 .services img {
   height: 5rem;
   width: auto;
+  margin-bottom: 2rem;
 }
 
 .galery {
@@ -344,7 +353,7 @@ body {
   body {
     font-size: 0.65em;
   }
-  .column {
+  .column, .services__elts {
     -webkit-box-flex: 50%;
         -ms-flex: 50%;
             flex: 50%;
@@ -359,13 +368,13 @@ body {
   body {
     font-size: 0.6em;
   }
-  .column {
+  .column, .services__elts {
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
             flex: 100%;
     max-width: 100%;
   }
-  .galery {
+  .galery, .services {
     padding: 3rem 2rem;
   }
 }
