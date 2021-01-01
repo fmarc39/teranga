@@ -117,7 +117,6 @@ body {
     flex-direction: column;
     align-items: center;
     height: calc(100vh - 8rem);
-    margin-bottom: 2rem;
     text-shadow: 2px 2px 4px black;
     position: relative;
 }
@@ -335,6 +334,7 @@ body {
     flex-direction: column;
     line-height: 1.5em;
     padding: 3rem 2rem;
+    color: rgb(172, 172, 172);
 }
 
 
@@ -363,7 +363,7 @@ body {
 
     body {
 
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
 }
 
@@ -371,7 +371,7 @@ body {
 
     body {
 
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
 
     .nav__elts {
@@ -402,7 +402,7 @@ body {
 
     body {
 
-        font-size: 0.65em;
+        font-size: 0.75em;
     }
 
     .column, .services__elts  {
@@ -412,7 +412,27 @@ body {
 
     .galery, .services {
 
-        padding: 5rem 5rem;
+        padding: 4rem 5rem;
+    }
+
+    .services__elts {
+
+        margin: 2rem 0;
+    }
+
+    .footer__elts {
+
+        padding: 2rem 2rem;
+        font-size: 1rem;
+
+    }
+
+    .header-p {
+
+        font-size: $medFont;
+        margin-bottom: 2rem;
+        text-align: center;
+        line-height: 1.5rem;
     }
 }
 
@@ -420,10 +440,10 @@ body {
 
     body {
 
-        font-size: 0.6em;
+        font-size: 0.65em;
     }
 
-    .column, .services__elts {
+    .column, .services__elts, .footer__elts {
         flex: 100%;
         max-width: 100%;
       }
@@ -431,6 +451,11 @@ body {
       .galery, .services {
 
         padding: 3rem 2rem;
+    }
+
+    .footer__elts {
+
+        font-size: 0.9 rem;
     }
 }
 

@@ -33,7 +33,7 @@ topUpBtn.addEventListener("click", () => {
 
 // CREATION DE LA SECTION QUI VA PERMETTRE D'OBERSVER LA SCROLL DE LA PAGE ET DE FAIRE APPARAITRE LES EFFETS 
 
-const ratio = 0.1
+const ratio = 0.25
 
 const options = {
 
