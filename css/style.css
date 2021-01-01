@@ -105,7 +105,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: calc(100vh - 8rem);
-  margin-bottom: 2rem;
   text-shadow: 2px 2px 4px black;
   position: relative;
 }
@@ -288,6 +287,7 @@ body {
           flex-direction: column;
   line-height: 1.5em;
   padding: 3rem 2rem;
+  color: #acacac;
 }
 
 @-webkit-keyframes blink {
@@ -322,13 +322,13 @@ body {
 
 @media (max-width: 1100px) {
   body {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 }
 
 @media (max-width: 900px) {
   body {
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
   .nav__elts {
     display: -webkit-box;
@@ -351,7 +351,7 @@ body {
 
 @media (max-width: 800px) {
   body {
-    font-size: 0.65em;
+    font-size: 0.75em;
   }
   .column, .services__elts {
     -webkit-box-flex: 50%;
@@ -360,15 +360,22 @@ body {
     max-width: 50%;
   }
   .galery, .services {
-    padding: 5rem 5rem;
+    padding: 4rem 5rem;
+  }
+  .services__elts {
+    margin: 2rem 0;
+  }
+  .footer__elts {
+    padding: 2rem 2rem;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 600px) {
   body {
-    font-size: 0.6em;
+    font-size: 0.7em;
   }
-  .column, .services__elts {
+  .column, .services__elts, .footer__elts {
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
             flex: 100%;
@@ -376,6 +383,9 @@ body {
   }
   .galery, .services {
     padding: 3rem 2rem;
+  }
+  .footer__elts {
+    font-size: 0.9 rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
