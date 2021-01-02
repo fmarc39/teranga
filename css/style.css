@@ -256,7 +256,8 @@ body {
 }
 
 .speech-bubble {
-  height: 450px;
+  width: 500px;
+  max-width: 95%;
 }
 
 .avatar {
@@ -280,8 +281,6 @@ body {
       -ms-flex: calc(50% - 1rem);
           flex: calc(50% - 1rem);
   padding: 2.5rem;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
 }
 
 .comments__avis {
@@ -404,9 +403,6 @@ body {
   }
   .elts {
     display: none;
-  }
-  .speech-bubble {
-    height: 390px;
   }
   .comments__avis {
     top: 100px;
