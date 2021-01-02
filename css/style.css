@@ -444,6 +444,12 @@ body {
     height: 150px;
     margin-right: 200px;
   }
+  .ml9 .letter {
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    display: inline;
+    line-height: 1em;
+  }
 }
 
 @media (max-width: 800px) {

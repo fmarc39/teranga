@@ -417,6 +417,7 @@ body {
         justify-content: space-between;
     }
 
+
     .elts {
         display: none;
 
@@ -460,6 +461,13 @@ body {
         height: 150px;
         margin-right: 200px;
     }
+
+    .ml9 .letter {
+        transform-origin: 50% 100%;
+        display: inline;
+        line-height: 1em;
+      }
+    
 
     
 }
