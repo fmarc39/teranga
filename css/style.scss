@@ -352,6 +352,7 @@ body {
     flex-direction: column;
     line-height: 1.5em;
     padding: 3rem 2rem;
+    flex: 33%;
     color: rgb(172, 172, 172);
 }
 
@@ -410,8 +411,6 @@ body {
 
     .comments__avis {
 
-        color: white;
-        position: absolute;
         top: 100px;
         display: inline-block;
         height: 150px;

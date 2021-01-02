@@ -348,6 +348,9 @@ body {
           flex-direction: column;
   line-height: 1.5em;
   padding: 3rem 2rem;
+  -webkit-box-flex: 33%;
+      -ms-flex: 33%;
+          flex: 33%;
   color: #acacac;
 }
 
@@ -406,8 +409,6 @@ body {
     height: 390px;
   }
   .comments__avis {
-    color: white;
-    position: absolute;
     top: 100px;
     display: inline-block;
     height: 150px;
