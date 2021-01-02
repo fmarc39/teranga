@@ -264,7 +264,6 @@ body {
 .speech-bubble {
 
     width: 500px;
-    max-width: 95%;
 
 }
 
@@ -406,12 +405,22 @@ body {
 
     .comments__avis {
 
-        top: 100px;
+        top: 110px;
         display: inline-block;
         height: 150px;
         width: 320px;
         line-height: 1.5rem;
         font-size: 1rem;
+    }
+
+    .name {
+
+        font-size: 1rem;
+    }
+
+    .speech-bubble {
+
+        width: 400px;
     }
 
     #menu-nav {
@@ -468,6 +477,21 @@ body {
         margin-bottom: 2rem;
         text-align: center;
         line-height: 1.5rem;
+    }
+
+    .comments__avis {
+
+        top: 95px;
+        display: inline-block;
+        height: 150px;
+        width: 320px;
+        line-height: 1.4rem;
+        font-size: 0.9rem;
+    }
+
+    .speech-bubble {
+
+        width: 370px;
     }
 }
 
