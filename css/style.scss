@@ -270,7 +270,7 @@ body {
 .avatar {
 
     height: 150px;
-    margin-right: 120px;
+    margin-right: 320px;
 }
 
 .comments__elts {
@@ -433,6 +433,11 @@ body {
         text-align: center;
     }
 
+    .avatar {
+
+        height: 150px;
+    }
+
     
 }
 
@@ -486,12 +491,12 @@ body {
         height: 150px;
         width: 320px;
         line-height: 1.4rem;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .speech-bubble {
 
-        width: 370px;
+        width: 350px;
     }
 }
 
