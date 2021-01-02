@@ -205,7 +205,6 @@ body {
     justify-content: start;
     align-items: center;
     width: 25%;
-    margin: 2.5rem 0;
     text-align: center;
     font-size: $medFont;
     padding: 1.5rem;
@@ -256,21 +255,24 @@ body {
 .comments {
 
     background-color: black;
-    height: 800px;
     display: flex;
+    flex-wrap: wrap;
+    padding-bottom: $marginBottom;
 
 
 }
 
 .speech-bubble {
 
-    height: 450px;
+    height: px;
+    
 
 }
 
 .avatar {
 
-    height: 100px;
+    height: 150px;
+    margin-right: 120px;
 }
 
 .comments__elts {
@@ -279,8 +281,10 @@ body {
     flex-direction: column-reverse;
     align-items: center;
     position: relative;
-    flex: 50%;
+    flex: calc(50% - 1rem);
     padding: 2.5rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
 
 }
 
@@ -288,11 +292,27 @@ body {
 
     color: white;
     position: absolute;
-    top: 330px;
+    top: 130px;
     display: inline-block;
     height: 180px;
     width: 380px;
-    line-height: 1.5rem;
+    line-height: 1.6rem;
+    font-size: 1.15rem;
+}
+
+.name {
+
+    margin-top: 1rem;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.quote {
+
+    font-weight: bold;
+    font-size: 2rem;
+
 }
 
 
@@ -409,6 +429,12 @@ body {
         flex: 50%;
         max-width: 50%;    
       }
+
+      .comments__elts {
+
+        flex: 100%;
+        max-width: 100%;
+    }
 
     .galery, .services {
 

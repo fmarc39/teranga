@@ -200,7 +200,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 25%;
-  margin: 2.5rem 0;
   text-align: center;
   font-size: 1.5em;
   padding: 1.5rem;
@@ -248,18 +247,21 @@ body {
 
 .comments {
   background-color: black;
-  height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 2rem;
 }
 
 .speech-bubble {
-  height: 450px;
+  height: px;
 }
 
 .avatar {
-  height: 100px;
+  height: 150px;
+  margin-right: 120px;
 }
 
 .comments__elts {
@@ -274,20 +276,35 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
+  -webkit-box-flex: calc(50% - 1rem);
+      -ms-flex: calc(50% - 1rem);
+          flex: calc(50% - 1rem);
   padding: 2.5rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 .comments__avis {
   color: white;
   position: absolute;
-  top: 330px;
+  top: 130px;
   display: inline-block;
   height: 180px;
   width: 380px;
-  line-height: 1.5rem;
+  line-height: 1.6rem;
+  font-size: 1.15rem;
+}
+
+.name {
+  margin-top: 1rem;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.quote {
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 .map {
@@ -402,6 +419,12 @@ body {
         -ms-flex: 50%;
             flex: 50%;
     max-width: 50%;
+  }
+  .comments__elts {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
   }
   .galery, .services {
     padding: 4rem 5rem;
