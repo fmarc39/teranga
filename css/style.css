@@ -19,7 +19,7 @@ body {
 
 .header {
   background-color: black;
-  background-image: url("../assets/img/headerBgImg.jpg");
+  background-image: url("../assets/img/ingredients-498199_1920.jpg");
   background-position: center;
   background-size: cover;
   min-height: 100vh;
@@ -220,7 +220,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: black;
-  padding: 5rem 10rem;
+  padding: 0rem 10rem 5rem 10rem;
 }
 
 .column {
@@ -286,24 +286,24 @@ body {
 .comments__avis {
   color: white;
   position: absolute;
-  top: 130px;
+  top: 115px;
   display: inline-block;
   height: 180px;
   width: 380px;
   line-height: 1.7rem;
-  font-size: 1.20rem;
+  font-size: 1.30rem;
 }
 
 .name {
   margin-top: 1rem;
   display: inline-block;
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.2em;
 }
 
 .date {
   font-style: italic;
-  font-size: 1rem;
+  font-size: 0.75em;
 }
 
 .quote {
@@ -485,12 +485,12 @@ body {
     line-height: 1.5rem;
   }
   .comments__avis {
-    top: 95px;
+    top: 85px;
     display: inline-block;
     height: 150px;
     width: 320px;
-    line-height: 1.4rem;
-    font-size: 0.8rem;
+    line-height: 1.25rem;
+    font-size: 1rem;
   }
   .speech-bubble {
     width: 350px;
