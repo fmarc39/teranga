@@ -489,17 +489,17 @@ body {
     display: inline-block;
     height: 150px;
     width: 320px;
-    line-height: 1.25rem;
-    font-size: 1rem;
+    line-height: 1.3rem;
+    font-size: 1.2rem;
   }
   .speech-bubble {
-    width: 350px;
+    width: 400px;
   }
 }
 
 @media (max-width: 600px) {
   body {
-    font-size: 0.6em;
+    font-size: 0.65em;
   }
   .column, .services__elts, .footer__elts {
     -webkit-box-flex: 100%;
@@ -512,6 +512,17 @@ body {
   }
   .footer__elts {
     font-size: 0.9 rem;
+  }
+  .speech-bubble {
+    width: 350px;
+  }
+  .comments__avis {
+    top: 85px;
+    display: inline-block;
+    height: 150px;
+    width: 320px;
+    line-height: 1.25rem;
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
