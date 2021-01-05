@@ -38,7 +38,6 @@ body {
     background-size: cover;
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
-    min-height: -webkit-fill-avaible;
     color: white;
     background-attachment: fixed;
 
@@ -198,7 +197,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-evenly;
     background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(53,45,44,0.9780287114845938) 34%);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(53, 45, 44, 0.87) 34%);
     padding: 10rem 10rem;
     color: white;
 }
@@ -545,6 +544,8 @@ body {
     .header-maintitle {
 
         font-size: 8em;
+        background-position: unset;
+        background-size: contain
       
     }
 

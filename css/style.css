@@ -24,7 +24,6 @@ body {
   background-size: cover;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
-  min-height: -webkit-fill-avaible;
   color: white;
   background-attachment: fixed;
 }
@@ -184,8 +183,8 @@ body {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   background: black;
-  background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(34%, rgba(53, 45, 44, 0.978029)));
-  background: linear-gradient(0deg, black 0%, rgba(53, 45, 44, 0.978029) 34%);
+  background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(34%, rgba(53, 45, 44, 0.87)));
+  background: linear-gradient(0deg, black 0%, rgba(53, 45, 44, 0.87) 34%);
   padding: 10rem 10rem;
   color: white;
 }
@@ -507,6 +506,8 @@ body {
   }
   .header-maintitle {
     font-size: 8em;
+    background-position: unset;
+    background-size: contain;
   }
   .header-p {
     font-size: 1.5em;
