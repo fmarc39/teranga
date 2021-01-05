@@ -545,7 +545,7 @@ body {
 
         font-size: 8em;
         background-position: unset;
-        background-size: contain
+
       
     }
 
@@ -566,6 +566,11 @@ body {
       .galery, .services {
 
         padding: 3rem 2rem;
+    }
+
+    .header-scroll-icon {
+
+        bottom: 2.5em;
     }
 
     .footer__elts {

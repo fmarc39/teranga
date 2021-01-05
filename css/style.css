@@ -507,7 +507,6 @@ body {
   .header-maintitle {
     font-size: 8em;
     background-position: unset;
-    background-size: contain;
   }
   .header-p {
     font-size: 1.5em;
@@ -524,6 +523,9 @@ body {
   }
   .galery, .services {
     padding: 3rem 2rem;
+  }
+  .header-scroll-icon {
+    bottom: 2.5em;
   }
   .footer__elts {
     font-size: 0.9 rem;
