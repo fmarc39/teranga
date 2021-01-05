@@ -194,7 +194,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: black;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(53,45,44,0.9780287114845938) 34%);
     padding: 10rem 10rem;
     color: white;
 }
