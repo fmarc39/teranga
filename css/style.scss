@@ -36,7 +36,8 @@ body {
     background-image: url('../assets/img/ingredients-498199_1920.jpg');
     background-position: center;
     background-size: cover;
-    min-height: 100vh;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     min-height: -webkit-fill-avaible;
     color: white;
     background-attachment: fixed;
