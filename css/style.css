@@ -505,6 +505,16 @@ body {
   body {
     font-size: 0.65em;
   }
+  .header-maintitle {
+    font-size: 8em;
+  }
+  .header-p {
+    font-size: 1.5em;
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 2.0rem;
+    pad: 1rem;
+  }
   .column, .services__elts, .footer__elts {
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
