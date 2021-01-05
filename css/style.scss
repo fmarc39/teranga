@@ -161,8 +161,7 @@ body {
 .header-scroll-icon {
 
     text-shadow: 3px 3px 5px black;
-    position: absolute;
-    bottom: 2em;
+    margin-top: 3rem;
     height: 4em;
     width: auto;
     transition-duration: 0.3s;
@@ -568,11 +567,7 @@ body {
         padding: 3rem 2rem;
     }
 
-    .header-scroll-icon {
-
-        bottom: 2.5em;
-    }
-
+ 
     .footer__elts {
 
         font-size: 0.9 rem;
