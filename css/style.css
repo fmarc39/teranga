@@ -22,7 +22,6 @@ body {
   background-image: url("../assets/img/ingredients-498199_1920.jpg");
   background-position: center;
   background-size: cover;
-  height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   color: white;
   background-attachment: fixed;
@@ -144,8 +143,7 @@ body {
 
 .header-scroll-icon {
   text-shadow: 3px 3px 5px black;
-  position: absolute;
-  bottom: 7rem;
+  margin-top: 5rem;
   height: 4em;
   width: auto;
   -webkit-transition-duration: 0.3s;
@@ -365,22 +363,26 @@ body {
 @-webkit-keyframes blink {
   from {
     opacity: .7;
-    bottom: 7rem;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
   to {
     opacity: 1;
-    bottom: 6.2rem;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
 }
 
 @keyframes blink {
   from {
     opacity: .7;
-    bottom: 7rem;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
   to {
     opacity: 1;
-    bottom: 6.2rem;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
 }
 
@@ -460,6 +462,9 @@ body {
   body {
     font-size: 0.75em;
   }
+  .header-scroll-icon {
+    margin-top: 4rem;
+  }
   .column, .services__elts {
     -webkit-box-flex: 50%;
         -ms-flex: 50%;
@@ -505,8 +510,8 @@ body {
   body {
     font-size: 0.65em;
   }
-  .header {
-    background-position: initial;
+  .header-scroll-icon {
+    margin-top: 2rem;
   }
   .header-maintitle {
     font-size: 8em;
