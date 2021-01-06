@@ -40,6 +40,7 @@ body {
     height: calc(var(--vh, 1vh) * 100);
     color: white;
     background-attachment: fixed;
+    position: relative;
 
 }
 
@@ -161,7 +162,8 @@ body {
 .header-scroll-icon {
 
     text-shadow: 3px 3px 5px black;
-    margin-top: 3rem;
+    position: absolute;
+    bottom: 7rem;
     height: 4em;
     width: auto;
     transition-duration: 0.3s;
@@ -369,11 +371,12 @@ body {
 @keyframes blink {
     from{
         opacity: .7;
-        bottom: 1.5rem;
+        bottom: 7rem;
+    
 
     } to {
         opacity: 1;
-        bottom: 1rem;
+        bottom: 6.2rem;
     }
 }
 .header-scroll-icon:hover {
@@ -538,6 +541,11 @@ body {
     body {
 
         font-size: 0.65em;
+    }
+
+    .header {
+
+        background-position: initial;
     }
 
     .header-maintitle {
