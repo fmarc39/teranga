@@ -9,7 +9,7 @@ const scrollBtn = document.getElementById("scroll-btn");
 
 scrollBtn.addEventListener("click", () => {
 
-  window.scroll(0, 1000)
+  window.scroll(0, window.innerHeight)
   console.log('scroll')
 })
 
