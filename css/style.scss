@@ -27,7 +27,6 @@ body {
     background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
 }
 
-
 // header 
 
 .header {
@@ -40,7 +39,6 @@ body {
     color: white;
     background-attachment: fixed;
     position: relative;
-
 }
 
 #up-arrow {
@@ -53,15 +51,13 @@ body {
     color: white; 
     cursor: pointer;
     padding: 15px;
-    height: 5em;
+    height: 4em;
     transition: 0.3s;
-
 }
 
 #up-arrow:hover {
 
     transform: scale(1.1);
-
 }
 
 // navbar
@@ -109,7 +105,6 @@ body {
 .menu {
 
     display: none;
-
 }
 
 .header-content {
@@ -147,14 +142,12 @@ body {
     border: none;
     margin-bottom: 2rem;
     font-weight: bold;
-    transition: .2s;
-    
+    transition: .2s;  
 }
 
 .header-btn:hover {
 
     transform: scale(1.05);
-
 }
 
 .header-scroll-icon {
@@ -219,8 +212,6 @@ body {
     height: 5rem;
     width: auto;
     margin-bottom: $marginBottom;
-
-
 }
 
 // Gallery
@@ -333,12 +324,22 @@ body {
 
 .footer {
 
+   
+    background-color: black;
+    color: white;
+}
+
+.footer-1, .footer-2 {
+
     display: flex;
     justify-content: space-evenly;
-    align-items:flex-start;
-    background-color: black;
+    align-items:flex-start; 
     flex-wrap: wrap;
-    color: white;
+}
+
+.footer-2 {
+
+    padding: 3rem;
 }
 
 
@@ -398,19 +399,11 @@ body {
 
 // Responsive
 
-@media (max-width: 1100px) {
-
-    body {
-
-        font-size: 0.9em;
-    }
-}
-
 @media (max-width: 900px) {
 
     body {
 
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
 
     .nav__elts {
@@ -423,6 +416,17 @@ body {
     .elts {
         display: none;
 
+    }
+
+    .column, .services__elts  {
+        flex: 50%;
+        max-width: 50%;    
+      }
+
+      .comments__elts {
+
+        flex: 100%;
+        max-width: 100%;
     }
 
 
@@ -486,16 +490,7 @@ body {
         margin-top: 4rem;
     }
 
-    .column, .services__elts  {
-        flex: 50%;
-        max-width: 50%;    
-      }
 
-      .comments__elts {
-
-        flex: 100%;
-        max-width: 100%;
-    }
 
     .galery, .services {
 
