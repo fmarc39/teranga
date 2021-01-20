@@ -16,10 +16,10 @@
 
             <nav class='header-nav'>
                 <ul class='nav__elts'>
-                    <li class='elts'>Contact</li>
-                    <li class='elts'>Menu</li>
-                    <li class="elts">Emplacement</li>
-                    <li class='elts'>Gallery</li>
+                    <a href="#footer"><li class='elts'>Contact</li></a>
+                    <a href=""><li class='elts'>Menu</li></a>
+                    <a href="#map"><li class="elts">Emplacement</li></a>
+                    <a href="#galery"><li class='elts'>Gallery</li></a>
                     <li id='phone'>
                         <a href="tel:+33384601371" target="blank">
                             <img src="./assets/icons/telephone.svg" alt="" class="nav_elts phone">
@@ -41,7 +41,7 @@
                     Elle est cette attitude qui fait que vous sous sentez <br>
                     constamment bien acceuillis.
                 </p>
-                <button class='header-btn' href='/menu.html'>Notre menu</button>
+                <a href="./assets/menu/menu_juin.pdf"><button class='header-btn'>Notre menu</button></a>
                 <img class="header-scroll-icon" src="./assets/icons/scroll.svg" alt="" id="scroll-btn">
             </div>
             <img src="./assets/icons/upwards-arrow.svg" alt="" id="up-arrow">
@@ -54,30 +54,30 @@
 
                 <div class="services__elts reveal-">
                     <img src="./assets/icons/medal.svg" alt="">
-                    <p>Nos plats sont préparés à partir de produits frais </p>
+                    <p class="services_p">Nos plats sont préparés à partir de produits frais </p>
                 </div>
                 
                 <div class="services__elts reveal-">
                     <img src="./assets//icons/homemade.svg" alt="">
-                    <p>Tous nos plats sont faits maison ainsi que ne désserts</p>
+                    <p class="services_p">Tous nos plats sont faits maison ainsi que ne désserts</p>
                 </div>
 
                 <div class="services__elts reveal-">
                     <img src="./assets/icons/sunny.svg" alt="">
-                    <p>Terrase en été <br>
+                    <p class="services_p">Terrase en été <br>
                         Salle climatisée <br>
                     </p>
                 </div>
 
                 <div class="services__elts reveal-">
                     <img src="./assets/icons/mountain.svg" alt="">
-                    <p>Plats régionnaux en saison - fondus - Mont d'or</p>
+                    <p class="services_p">Plats régionnaux en saison - fondus - Mont d'or</p>
 
                 </div>
 
             </section>
 
-            <picture class="galery">
+            <picture class="galery" id="galery">
                 
                 <div class="column">
                     <img src="./assets//img/creme_brule.png" alt="" class="img 1">
@@ -106,7 +106,7 @@
         
             </picture>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2751.882681973881!2d5.862628515588757!3d46.391551879122865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ced6249e996d1%3A0xc1aed282cd4d14d6!2sLa%20T%C3%A9ranga!5e0!3m2!1sfr!2sfr!4v1609443270993!5m2!1sfr!2sfr" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="map"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2751.882681973881!2d5.862628515588757!3d46.391551879122865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ced6249e996d1%3A0xc1aed282cd4d14d6!2sLa%20T%C3%A9ranga!5e0!3m2!1sfr!2sfr!4v1609443270993!5m2!1sfr!2sfr" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="map" id="map"></iframe>
 
             <section class="comments">
                 <div class="comments__elts">
@@ -144,7 +144,7 @@
 
         </main>
 
-        <footer class="footer">
+        <footer class="footer" id="footer">
 
 
             <div class="footer-1">
@@ -177,14 +177,14 @@
                     <p>La Téranga <br>
                     5 Rue Victor Hugo <br>
                     39200 St Claude <br>
-                    Tél: 03.84.60.13.71 </p>
+                    <a href="tel:+33384601371" target="blank"">Tél: 03.84.60.13.71</a> </p>
                 </div>
             </div>
 
             <div class="footer-2">
 
                 <p class="footer__elts"><a href="">Mentions légale</a></p>
-                <p class="footer__elts">Création <a href="">François Marc</a></p>
+                <p class="footer__elts">Création <a href="mailto:francoismarc2@gmail.com">François Marc</a></p>
 
             </div>
 
