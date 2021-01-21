@@ -41,7 +41,7 @@
                     Elle est cette attitude qui fait que vous sous sentez <br>
                     constamment bien acceuillis.
                 </p>
-                <a href="./assets/menu/menu_juin.pdf"><button class='header-btn'>Notre menu</button></a>
+                <a href="./assets/menu/menu_juin.pdf" target="blank"><button class='header-btn'>Notre menu</button></a>
                 <img class="header-scroll-icon" src="./assets/icons/scroll.svg" alt="" id="scroll-btn">
             </div>
             <img src="./assets/icons/upwards-arrow.svg" alt="" id="up-arrow">
@@ -146,7 +146,6 @@
 
         <footer class="footer" id="footer">
 
-
             <div class="footer-1">
                 <div class="footer__elts"> 
                     <img src="./assets/icons/wallet.svg" alt="">
@@ -183,14 +182,35 @@
 
             <div class="footer-2">
 
-                <p class="footer__elts"><a href="">Mentions légale</a></p>
+                <p class="footer__elts"><a href="./html/mentions-légales.html">Mentions légale</a></p>
                 <p class="footer__elts">Création <a href="mailto:francoismarc2@gmail.com">François Marc</a></p>
 
             </div>
 
         </footer>
 
+
+    
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org/",
+                "@type": "Restaurant",
+                "name": "La teranga",
+                "acceptsReservations": "Yes",
+                "menu": "",
+                "servesCuisine": "TRADITIONNELLE GASTRONOMIQUE",
+                "priceRange": "$$",
+                "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "5 Rue Victor Hugo",
+                "addressLocality": "St-Claude",
+                "addressRegion": "JURA",
+                "postalCode": "39200"
+                },
+                "telephone": "+33384601371"
+            }
+        </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
         <script src="./js/index.js"></script>
     </body>
-</html> 
+</html >
