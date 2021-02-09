@@ -26,6 +26,8 @@ body {
   height: 100vh;
   background-attachment: fixed;
   position: relative;
+  -webkit-transition: height 999999s;
+  transition: height 999999s;
 }
 
 #up-arrow {
