@@ -19,15 +19,13 @@ body {
 
 .header {
   background-color: black;
-  background-image: url("../assets/img/bg_img.jpg");
+  background-image: url("../assets/img/jpeg/bg_img.jpeg");
   background-position: center;
   background-size: cover;
   color: white;
   height: 100vh;
   background-attachment: fixed;
   position: relative;
-  -webkit-transition: height 999999s;
-  transition: height 999999s;
 }
 
 #up-arrow {
@@ -243,6 +241,7 @@ body {
   margin-top: 20px;
   vertical-align: middle;
   width: 100%;
+  height: auto;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -webkit-box-shadow: 3px 3px 10px rgba(219, 219, 219, 0.267);
@@ -350,6 +349,7 @@ body {
 
 .footer img {
   height: 3em;
+  width: auto;
   margin-bottom: 2rem;
 }
 

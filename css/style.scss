@@ -32,14 +32,13 @@ body {
 .header {
 
     background-color: black;
-    background-image: url('../assets/img/bg_img.jpg');
+    background-image: url('../assets/img/jpeg/bg_img.jpeg');
     background-position: center;
     background-size: cover;
     color: white;
     height: 100vh;
     background-attachment: fixed;
     position: relative;
-    transition: height 999999s
 }
 
 #up-arrow {
@@ -85,6 +84,7 @@ body {
     }
 
 };
+
 
 .phone, .menu {
 
@@ -242,6 +242,7 @@ body {
     margin-top: 20px;
     vertical-align: middle;
     width: 100%;
+    height: auto;
     transition: 0.3s;
     box-shadow: 3px 3px 10px rgba(219, 219, 219, 0.267);
   }
@@ -355,6 +356,7 @@ body {
 .footer img {
 
     height: 3em;
+    width: auto;
     margin-bottom: $marginBottom;
 
 }
@@ -430,7 +432,6 @@ body {
         
     }
 
-
     .elts {
         display: none;
 
@@ -441,7 +442,6 @@ body {
         flex: 100%;
         max-width: 100%;
     }
-
 
     .comments__avis {
 
@@ -457,8 +457,6 @@ body {
 
         font-size: 1rem;
     }
-
-
 
     .speech-bubble {
 
@@ -492,8 +490,6 @@ body {
         display: inline;
         line-height: 1em;
       }
-    
-
     
 }
 
@@ -621,18 +617,3 @@ body {
         font-size: 1rem;
     }
 }
-
-@mixin vh-fix {
-    @media (max-device-aspect-ratio: 3/4) {
-      height: calc(100vw * 1.333 - 9%);
-    }
-    @media (max-device-aspect-ratio: 2/3) {
-      height: calc(100vw * 1.5 - 9%);
-    }
-    @media (max-device-aspect-ratio: 10/16) {
-      height: calc(100vw * 1.6 - 9%);
-    }
-    @media (max-device-aspect-ratio: 9/16) {
-      height: calc(100vw * 1.778 - 9%);
-    }
-  }

@@ -8,7 +8,7 @@ scrollBtn.addEventListener("click", () => {
 
   window.scroll(0, window.innerHeight)
   console.log('scroll')
-})
+}, {passive: true})
 
 // Wrap every letter in a span
 var textWrapper = document.querySelector('.ml9 .letters');
@@ -37,14 +37,14 @@ window.addEventListener("scroll", () => {
 
     topUpBtn.style.display = "non"
   }
-})
+}, {passive: true})
 
 topUpBtn.addEventListener("click", () => {
 
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 
-})
+}, {passive: true})
 
 
 // CREATION DE LA SECTION QUI VA PERMETTRE D'OBERSVER LA SCROLL DE LA PAGE ET DE FAIRE APPARAITRE LES EFFETS 
@@ -72,4 +72,11 @@ const options = {
     observer.observe(r)
   })
 
-  observer.observe(target);
+  try {
+
+  observer.observe(target)
+
+  } catch(error) {
+
+
+  }
