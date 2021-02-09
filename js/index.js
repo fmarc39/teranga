@@ -79,4 +79,16 @@ const options = {
   } catch(error) {
 
 
+  // RESPONSIVE MENU
+
+  }
+
+  function responsive() {
+
+    var x = document.getElementById("navbar");
+    if (x.className === "nav__elts") {
+      x.className += " responsive";
+    } else {
+      x.className = "nav__elts";
+    } 
   }

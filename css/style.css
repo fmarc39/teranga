@@ -92,6 +92,14 @@ body {
   display: none;
 }
 
+#menu-nav {
+  background-color: rgba(172, 172, 172, 0);
+  border: none;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
 .header-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -305,17 +313,18 @@ body {
   margin-top: 1rem;
   display: inline-block;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.1em;
+  color: #dfdfdf;
 }
 
 .date {
   font-style: italic;
-  font-size: 0.75em;
+  font-size: 0.70em;
 }
 
 .quote {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 
 .map {
@@ -428,6 +437,31 @@ body {
 }
 
 @media (max-width: 900px) {
+  #phone {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+  }
+  .nav__elts.responsive li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+  .nav__elts.responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   body {
     font-size: 0.9em;
   }
