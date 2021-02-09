@@ -19,11 +19,11 @@ body {
 
 .header {
   background-color: black;
-  background-image: url("../assets/img/ingredients-498199_1920.jpg");
+  background-image: url("../assets/img/bg_img.jpg");
   background-position: center;
   background-size: cover;
-  max-height: calc(var(--vh, 1vh) * 100);
   color: white;
+  height: 100vh;
   background-attachment: fixed;
   position: relative;
 }
@@ -62,15 +62,16 @@ body {
   overflow: hidden;
 }
 
-.nav__elts a {
+.nav__elts li {
   margin-right: 6rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
 }
 
-.nav__elts a:last-child {
+.nav__elts li:last-child {
   margin-right: 0rem;
+  display: none;
 }
 
 .phone, .menu {
@@ -459,7 +460,11 @@ body {
   .speech-bubble {
     width: 400px;
   }
-  #menu-nav {
+  .menu {
+    display: initial;
+  }
+  .nav__elts li:last-child {
+    margin-right: 0rem;
     display: initial;
   }
   .header-maintitle {
@@ -514,6 +519,9 @@ body {
 }
 
 @media (max-width: 600px) {
+  .header {
+    background-image: url("../assets/img/img_mobile/bg_img.jpg");
+  }
   body {
     font-size: 0.65em;
   }
@@ -553,28 +561,6 @@ body {
     width: 320px;
     line-height: 1.25rem;
     font-size: 1rem;
-  }
-}
-
-@media (orientation: landscape) {
-  .header {
-    height: 140vh;
-  }
-  .header-content {
-    margin-top: 6rem;
-  }
-  .header-maintitle {
-    font-size: 6em;
-    margin-bottom: 1rem;
-  }
-  .header-p {
-    font-size: 1.1em;
-  }
-  .header-btn {
-    font-size: 1em;
-  }
-  .header-scroll-icon {
-    margin-top: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
