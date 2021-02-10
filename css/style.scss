@@ -456,7 +456,7 @@ body {
         flex-direction: column;
         margin-bottom: 1rem;
         margin-right: 0;
-        font-size: 2rem;
+        font-size: 1.7rem;
         transition: .3s;
         
     }
@@ -465,9 +465,10 @@ body {
 
         display: flex;
         flex-direction: column;
-        box-shadow: 3px 3px 5px rgba(36, 36, 36, 0.247);
-        background: rgba(0, 0, 0, 0.493);
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.74);
+        background: rgba(0, 0, 0, 0.61);
         transition: .3s;
+    
     }
 
     .header-scroll-icon.responsive{
@@ -615,7 +616,7 @@ body {
     .header {
 
         
-        height: 750px;
+        height: 800px;
     }
 
     body {
