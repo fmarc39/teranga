@@ -484,10 +484,6 @@ body {
 @media (max-width: 900px) {
   .header {
     height: 900px;
-    -webkit-transition: height 999999s;
-    transition: height 999999s;
-    -webkit-transition: background-image 9999s ease-in-out;
-    transition: background-image 9999s ease-in-out;
   }
   #phone {
     position: absolute;
