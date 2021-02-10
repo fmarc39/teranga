@@ -22,14 +22,9 @@ body {
   background-image: url("../assets/img/jpeg/bg_img.jpeg");
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
   color: white;
   min-height: 100vh;
   background-attachment: fixed;
-  transition: height 1000000s ease;
-  -webkit-transition: height 1000000s ease;
-  -moz-transition: height 1000000s ease;
-  -o-transition: height 1000000s ease;
 }
 
 .header-ml {
