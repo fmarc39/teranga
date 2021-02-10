@@ -37,6 +37,8 @@ body {
     background-size: cover;
     color: white;
     min-height: 100vh;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     background-attachment: fixed;
     z-index: 1;
 
@@ -620,8 +622,6 @@ body {
 
         margin-top: 4rem;
     }
-
-
 
     .galery, .services {
 
