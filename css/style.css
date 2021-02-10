@@ -484,7 +484,7 @@ body {
 
 @media (max-width: 900px) {
   .header {
-    background-attachment: initial;
+    background-attachment: scroll;
   }
   #phone {
     position: absolute;
@@ -584,7 +584,6 @@ body {
 @media (max-width: 800px) {
   .header {
     background-image: url("../assets/img/img_mobile/bg_img.jpg");
-    height: 850px;
   }
   body {
     font-size: 0.75em;
@@ -623,7 +622,6 @@ body {
 
 @media (max-width: 600px) {
   .header {
-    height: 800px;
     background-attachment: scroll;
   }
   body {
