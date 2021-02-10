@@ -38,9 +38,6 @@ body {
     color: white;
     min-height: 100vh;
     background-attachment: fixed;
-    -webkit-transition: background-image 9999s ease-in-out;
-    transition: background-image 9999s ease-in-out;
-    transition: height 999999s 
 }
 
 .header-ml {
@@ -491,6 +488,7 @@ body {
     .header {
 
         height: 900px;
+        transition: height 999999s 
     }
 
     #phone {
