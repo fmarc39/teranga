@@ -484,7 +484,6 @@ body {
 
 @media (max-width: 900px) {
   .header {
-    height: 900px;
     background-attachment: initial;
   }
   #phone {
@@ -625,6 +624,7 @@ body {
 @media (max-width: 600px) {
   .header {
     height: 800px;
+    background-attachment: scroll;
   }
   body {
     font-size: 0.65em;
