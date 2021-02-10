@@ -101,7 +101,7 @@ body {
   border: none;
   position: absolute;
   top: 2rem;
-  right: 2rem;
+  right: 1.5rem;
 }
 
 .header-content {
@@ -441,13 +441,16 @@ body {
 }
 
 @media (max-width: 900px) {
+  .header {
+    height: 900px;
+  }
   #phone {
     position: absolute;
     top: 2rem;
-    left: 2rem;
+    left: 1.5rem;
   }
   .nav__elts.responsive li:first-child {
-    margin-top: 3rem;
+    margin-top: 3.5rem;
   }
   .nav__elts.responsive li {
     display: -webkit-box;
