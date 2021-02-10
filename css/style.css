@@ -60,6 +60,8 @@ body {
   font-size: 1.5em;
   padding: 2rem;
   overflow: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .nav__elts li {
@@ -67,6 +69,8 @@ body {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .nav__elts li:last-child {
@@ -442,6 +446,9 @@ body {
     top: 2rem;
     left: 2rem;
   }
+  .nav__elts.responsive li:first-child {
+    margin-top: 3rem;
+  }
   .nav__elts.responsive li {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -452,6 +459,9 @@ body {
             flex-direction: column;
     margin-bottom: 1rem;
     margin-right: 0;
+    font-size: 2rem;
+    -webkit-transition: .3s;
+    transition: .3s;
   }
   .nav__elts.responsive {
     display: -webkit-box;
@@ -461,6 +471,14 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-shadow: 3px 3px 5px rgba(36, 36, 36, 0.247);
+            box-shadow: 3px 3px 5px rgba(36, 36, 36, 0.247);
+    background: rgba(0, 0, 0, 0.493);
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .header-scroll-icon.responsive {
+    display: none;
   }
   body {
     font-size: 0.9em;
@@ -521,8 +539,7 @@ body {
 @media (max-width: 800px) {
   .header {
     background-image: url("../assets/img/img_mobile/bg_img.jpg");
-    min-height: 650px;
-    max-height: 850px;
+    height: 850px;
   }
   body {
     font-size: 0.75em;
@@ -560,6 +577,9 @@ body {
 }
 
 @media (max-width: 600px) {
+  .header {
+    height: 750px;
+  }
   body {
     font-size: 0.65em;
   }

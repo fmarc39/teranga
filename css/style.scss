@@ -70,11 +70,14 @@ body {
     font-size: $medFont;
     padding: 2rem;
     overflow: hidden;
+    transition: .3s;
+
     li {
 
         margin-right: 6rem;
         transition: 0.3s;
         cursor: pointer;
+        transition: .3s;
     }
 
     li:last-child {
@@ -437,18 +440,34 @@ body {
         left: 2rem;
     }
 
+    .nav__elts.responsive li:first-child {
+
+        margin-top: 3rem;
+    }
+
     .nav__elts.responsive li{
 
         display: flex;
         flex-direction: column;
         margin-bottom: 1rem;
         margin-right: 0;
+        font-size: 2rem;
+        transition: .3s;
+        
     }
 
     .nav__elts.responsive {
 
         display: flex;
         flex-direction: column;
+        box-shadow: 3px 3px 5px rgba(36, 36, 36, 0.247);
+        background: rgba(0, 0, 0, 0.493);
+        transition: .3s;
+    }
+
+    .header-scroll-icon.responsive{
+
+        display: none;
     }
 
     body {
@@ -530,8 +549,7 @@ body {
     .header {
 
         background-image: url('../assets/img/img_mobile/bg_img.jpg');
-        min-height: 650px;
-        max-height: 850px;
+        height: 850px;
     }
 
     body {
@@ -589,18 +607,21 @@ body {
 
 @media (max-width: 600px) {
 
-   
+    .header {
+
+        
+        height: 750px;
+    }
+
     body {
 
         font-size: 0.65em;
     }
 
-
     .header-scroll-icon {
 
         margin-top: 2rem;
     }
-
 
     .header-maintitle {
 

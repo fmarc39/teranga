@@ -85,10 +85,13 @@ const options = {
 
   function responsive() {
 
-    var x = document.getElementById("navbar");
-    if (x.className === "nav__elts") {
-      x.className += " responsive";
+    var scroll_btn = document.getElementById("scroll-btn")
+    var nav = document.getElementById("navbar");
+    if (nav.className === "nav__elts") {
+      scroll_btn.className += " responsive"
+      nav.className += " responsive";
     } else {
-      x.className = "nav__elts";
+      nav.className = "nav__elts";
+      scroll_btn.className = "header-scroll-icon"
     } 
   }
