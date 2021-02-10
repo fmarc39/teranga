@@ -36,9 +36,11 @@ body {
     background-position: center;
     background-size: cover;
     color: white;
-    height: 100vh;
+    min-height: 100vh;
     background-attachment: fixed;
     z-index: 1;
+    -webkit-transition: background-image 9999s ease-in-out;
+    transition: background-image 9999s ease-in-out;
 
 }
 
@@ -148,7 +150,7 @@ body {
 
 .header-maintitle {
 
-    font-size: 9em;
+    font-size: 8em;
     margin-bottom: 2rem;
     font-weight: bold;
 }
@@ -248,7 +250,7 @@ body {
 
 .services_p {
 
-    font-size: 1.4rem;
+    font-size: 1.25rem;
 }
 
 .services img {
@@ -385,7 +387,7 @@ body {
 
 .footer-2 {
 
-    padding: 3rem;
+    padding: 2rem;
 }
 
 
@@ -451,6 +453,13 @@ body {
     margin: 0rem 5em;
     padding: 4em 2em;
     background-color: rgba(0, 0, 0, 0.226) ;
+}
+
+.ml-title {
+
+    font-size: 1.7em;
+    margin-bottom: $marginBottom;
+    text-align: center;
 }
 
 .mentions_legales p {
@@ -662,7 +671,6 @@ body {
 
     .header {
 
-        
         height: 800px;
     }
 
