@@ -25,9 +25,10 @@ body {
   color: white;
   min-height: 100vh;
   background-attachment: fixed;
-  z-index: 1;
   -webkit-transition: background-image 9999s ease-in-out;
   transition: background-image 9999s ease-in-out;
+  -webkit-transition: height 999999s;
+  transition: height 999999s;
 }
 
 .header-ml {
