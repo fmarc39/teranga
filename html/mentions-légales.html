@@ -8,34 +8,164 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+
+        <meta name="description" content="Plats Diversifiés, Traditionnels et Élaborés Avec des Produits Locaux et Faits Maison. Parking Gratuit. Venez Nous Rendre Visite !">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="françois marc">
+
         <title>La teranga - Restaurant</title>
     </head>
     <body>
 
-        <header class='header'>
+        <header class='header-ml'>
 
             <nav class='header-nav'>
-                <ul class='nav__elts'>
-                    <a href="#footer"><li class='elts'>Contact</li></a>
-                    <a href=""><li class='elts'>Menu</li></a>
-                    <a href="#map"><li class="elts">Emplacement</li></a>
-                    <a href="#galery"><li class='elts'>Gallery</li></a>
-                    <li id='phone'>
-                        <a href="tel:+33384601371" target="blank">
-                            <img src="../assets/icons/telephone.svg" alt="" class="nav_elts phone">
+                <ul class='nav__elts' id="navbar">
+                    <li class="elts"> <a href="#footer">Contact</a></li>
+                    <li class="elts"> <a href="#footer">Menu</a></li>
+                    <li class="elts"> <a href="#map">Emplacement</a></li>
+                    <li class="elts"> <a href="#galery">Gallery</a></li>
+                    <li id="phone"> 
+                        <a href="tel:+33384601371" target="blank" title="telephone" alt='icone telephone'>
+                        <img src="../assets/icons/telephone.svg" alt="" class="nav_elts phone">
                         </a>
-                    </li>
-                    <li>
-                        <img src="../assets/icons/menu.svg" alt="" class='nav_elts menu' id="menu-nav">
-                    </li>
+                    </li>              
+                    <li> <button onclick="responsive()" alt='icone bare de navigation' id="menu-nav"><img src="../assets/icons/menu.svg" alt="icone bare de navigation" class='nav_elts menu'></button></li>  
                 </ul>
             </nav>
 
-            <div class="mentions_légales">
+            <h1 class='header-maintitle-ml'>La terranga</h1>
+
+            <div class="mentions_legales">
+
+                <p>En vigueur au 14/09/2019 
+
+                    Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la Confiance dans l’économie numérique, dite L.C.E.N., il est porté à la connaissance des utilisateurs du site https://lacrotonese.fr les présentes mentions légales.
+                    
+                    La connexion et la navigation sur le site www.lacrotonese.fr par l’utilisateur implique acceptation intégrale et sans réserve des présentes mentions légales.
+                    
+                    Ces dernières sont accessibles sur le site à la rubrique « Mentions légales ».
+                </p>
+
+                <h3 class="ml_header">ARTICLE 1 : L’éditeur</h3>
+
+                <p>
+                    L’édition du site https://lacrotonese.fr est assurée par la Société SARL LA CROTONESE au capital de 90 000 euros, immatriculée au RCS de Lons le Saunier sous le numéro 440 904 407, dont le siège social est situé au 10 rue Voltaire 39200 Saint Claude, numéro de téléphone 03.84.45.10.63.
+
+                    N° de TVA intracommunautaire : FR87440904407
+
+                    La Directrice de la publication est Mme Japy Maria
+                </p>
+
+                <h3 class="ml_header">ARTICLE 2 : L’hébergeur</h3>
+
+                <p>
+                    L’hébergeur du site https://lacrotonese.fr est la Société HOSTPAPA, dont le siège social est situé au 18 King William Street London EC4N 7BP, avec le numéro de téléphone : 01.70.71.26.89.
+                </p>
+
+                <h3 class="ml_header">ARTICLE 3 : Accès au site</h3>
+
+                <p>
+                    Le site est accessible par tout endroit, 7j/7, 24h/24 sauf cas de force majeure, interruption programmée ou non et pouvant découler d’une nécessité de maintenance.
+
+                    En cas de modification, interruption ou suspension des services le site https://lacrotonese.fr ne saurait être tenu responsable.
+                </p>
+
+                <h3 class="ml_header">ARTICLE 4 : Collecte des données</h3>
                 
+                <p>
+                    Le site est exempté de déclaration à la Commission Nationale Informatique et Libertés (CNIL) dans la mesure où il ne collecte aucune donnée concernant les utilisateurs.
+                </p>
+
+                <h3 class="ml_header">ARTICLE 5 : Cookies</h3>
+
+                <p>
+
+                    L’utilisateur est informé que lors de ses visites sur le site, un cookie peut s’installer automatiquement sur son logiciel de navigation.
+
+                    En naviguant sur le site, il les accepte.
+
+                    Un cookie est un élément qui ne permet pas d’identifier l’utilisateur mais sert à enregistrer des informations relatives à la navigation de celui-ci sur le site Internet. L’utilisateur pourra désactiver ce cookie par l’intermédiaire des paramètres figurant au sein de son logiciel de navigation.
+                </p>
+
+                <h3 class="ml_header">ARTICLE 6 : Propriété intellectuelle</h3>
+
+                <p>
+                    Toute utilisation, reproduction, diffusion, commercialisation, modification de toute ou partie du site https://lacrotonese.fr, sans autorisation de l’Editeur est prohibée et pourra entraînée des actions et poursuites judiciaires telles que notamment prévues par le Code de la propriété intellectuelle et le Code civil.
+                </p>
+
             </div>
+
+        
 
         </header>
 
+        <footer class="footer" id="footer">
 
+            <div class="footer-1">
+                <div class="footer__elts"> 
+                    <img src="../assets/icons/wallet.svg" alt="">
+                    <p>
+                        <ul>
+                            <li>Espèces</li>
+                            <li>Tickets Restaurants (papier et carte)</li>
+                            <li>Cartes bancaires</li>
+                        </ul>
+                    </p>
+                </div>
+    
+                <div class="footer__elts"> 
+                    <img src="../assets/icons/clock.svg" alt="">
+                    <p>
+                        Lundi 	fermé <br>
+                        Mardi 	12:00 - 13:30 & 19:00 - 20:30 Sur réservation <br>
+                        Mercredi  12:00 - 13:30 & 19:00 - 20:30 <br>
+                        Jeudi 	12:00 - 13:30 & 19:00 - 20:30 <br>
+                        Vendredi 	12:00 - 13:30 & 19:00 - 21:30 <br>
+                        Samedi 	12:00 - 13:30 & 19:00 - 21:30 <br>
+                        Dimanche 	12:00 - 13:30<br>
+                    </p>
+                </div>
+    
+                <div class="footer__elts">
+                    <img src="../assets/icons/place-localizer.svg" alt="">
+                    <p>La Téranga <br>
+                    5 Rue Victor Hugo <br>
+                    39200 St Claude <br>
+                    <a href="tel:+33384601371" target="blank"">Tél: 03.84.60.13.71</a> </p>
+                </div>
+            </div>
 
+            <div class="footer-2">
+
+                <p class="footer__elts"><a href="./html/mentions-légales.html">Mentions légale</a></p>
+                <p class="footer__elts">Création <a href="mailto:francoismarc2@gmail.com">François Marc</a></p>
+
+            </div>
+
+        </footer>
+
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org/",
+                "@type": "Restaurant",
+                "name": "La teranga",
+                "acceptsReservations": "Yes",
+                "menu": "",
+                "servesCuisine": "TRADITIONNELLE GASTRONOMIQUE",
+                "priceRange": "$$",
+                "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "5 Rue Victor Hugo",
+                "addressLocality": "St-Claude",
+                "addressRegion": "JURA",
+                "postalCode": "39200"
+                },
+                "telephone": "+33384601371"
+            }
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script src="../js/index.js"></script>
+    </body>
+</html >

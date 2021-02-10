@@ -25,7 +25,16 @@ body {
   color: white;
   height: 100vh;
   background-attachment: fixed;
-  position: relative;
+  z-index: 1;
+}
+
+.header-ml {
+  background-color: black;
+  background-image: url("../assets/img/jpeg/bg_img.jpeg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  background-attachment: fixed;
 }
 
 #up-arrow {
@@ -62,6 +71,7 @@ body {
   overflow: hidden;
   -webkit-transition: .3s;
   transition: .3s;
+  min-height: 7rem;
 }
 
 .nav__elts li {
@@ -125,6 +135,14 @@ body {
 
 .header-maintitle {
   font-size: 9em;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.header-maintitle-ml {
+  text-align: center;
+  margin: 2rem auto;
+  font-size: 5em;
   margin-bottom: 2rem;
   font-weight: bold;
 }
@@ -194,10 +212,11 @@ body {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   background: black;
-  background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(34%, rgba(53, 45, 44, 0.87)));
-  background: linear-gradient(0deg, black 0%, rgba(53, 45, 44, 0.87) 34%);
+  background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(34%, #0e0e0e));
+  background: linear-gradient(0deg, black 0%, #0e0e0e 34%);
   padding: 10rem 10rem;
   color: white;
+  z-index: 0;
 }
 
 .services__elts {
@@ -429,6 +448,23 @@ body {
           transform-origin: 50% 100%;
   display: inline-block;
   line-height: 1em;
+}
+
+.mentions_legales {
+  margin: 0rem 5rem;
+  padding: 4rem 2rem;
+  background-color: rgba(0, 0, 0, 0.226);
+}
+
+.mentions_legales p {
+  font-size: 1.2em;
+  line-height: 1.4rem;
+}
+
+.ml_header {
+  font-size: 2em;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 @media (max-width: 1100px) {
