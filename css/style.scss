@@ -1,4 +1,4 @@
-// global
+// global vars
 
 $marginBottom: 2rem;
 $litleFont: 1em;
@@ -372,7 +372,6 @@ body {
 
 .footer {
 
-   
     background-color: black;
     color: white;
 }
@@ -435,16 +434,15 @@ body {
 
 // H1 annimation 
 
-  .ml9 .text-wrapper {
-  
+.ml9 .text-wrapper {
     overflow: hidden;
-  }
-  
-  .ml9 .letter {
+}
+
+.ml9 .letter {
     transform-origin: 50% 100%;
     display: inline-block;
     line-height: 1em;
-  }
+}
 
 // Mentions légals 
 
@@ -483,7 +481,7 @@ body {
     .column, .services__elts  {
         flex: 50%;
         max-width: 50%;    
-      }
+}
 
 }
 
@@ -549,7 +547,7 @@ body {
 
     }
 
-      .comments__elts {
+.comments__elts {
 
         flex: 100%;
         max-width: 100%;
@@ -700,14 +698,13 @@ body {
     .column, .services__elts, .footer__elts {
         flex: 100%;
         max-width: 100%;
-      }
+    }
 
-      .galery, .services {
+.galery, .services {
 
         padding: 3rem 2rem;
     }
 
- 
     .footer__elts {
 
         font-size: 0.9 rem;

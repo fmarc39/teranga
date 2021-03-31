@@ -13,7 +13,7 @@ scrollBtn.addEventListener("click", () => {
 }, {passive: true})
 
 // Wrap every letter in a span
-var textWrapper = document.querySelector('.ml9 .letters');
+let textWrapper = document.querySelector('.ml9 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 anime.timeline({loop: false})
@@ -57,7 +57,7 @@ const options = {
     rootMargin: '0px',
     threshold: ratio
   }
-  var callback = function(entries, observer) { 
+  let callback = function(entries, observer) { 
     entries.forEach(entry => {
 
         if (entry.intersectionRatio > ratio) {
@@ -66,9 +66,9 @@ const options = {
         }
     })
   }
-  var observer = new IntersectionObserver(callback, options);
+  let observer = new IntersectionObserver(callback, options);
 
-  var target = document.querySelectorAll("[class*=reveal-").forEach(function (r) {
+  let target = document.querySelectorAll("[class*=reveal-").forEach(function (r) {
     observer.observe(r)
   })
 
@@ -84,8 +84,8 @@ const options = {
 
   function responsive() {
 
-    var scroll_btn = document.getElementById("scroll-btn")
-    var nav = document.getElementById("navbar");
+    let scroll_btn = document.getElementById("scroll-btn")
+    let nav = document.getElementById("navbar");
     if (nav.className === "nav__elts") {
       scroll_btn.className += " responsive"
       nav.className += " responsive";
