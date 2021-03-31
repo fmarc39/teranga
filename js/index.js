@@ -1,4 +1,7 @@
+const init = () => {
+console.log('ok')
 
+}
 // Scroll Btn 
 
 const scrollBtn = document.getElementById("scroll-btn");
@@ -22,7 +25,6 @@ anime.timeline({loop: false})
     delay: (el, i) => 45 * (i+1)
   })
 
-
 // Top-up Btn 
 
 const topUpBtn = document.getElementById('up-arrow');
@@ -45,10 +47,9 @@ topUpBtn.addEventListener("click", () => {
 
 }, {passive: true})
 
-
 // CREATION DE LA SECTION QUI VA PERMETTRE D'OBERSVER LA SCROLL DE LA PAGE ET DE FAIRE APPARAITRE LES EFFETS 
 
-const ratio = 0.25
+const ratio = 0.10
 
 const options = {
 
@@ -77,7 +78,6 @@ const options = {
 
   } catch(error) {
 
-
   // RESPONSIVE MENU
 
   }
@@ -100,3 +100,5 @@ const options = {
 let vh = window.innerHeight * 0.01;
 
 document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+window.addEventListener('load', init);
