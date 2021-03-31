@@ -1,19 +1,37 @@
-const init = () => {
-console.log('ok')
+const app = {
+  init: function () {
+    // Recuperation des elements du DOM
+    app.responsiveBtn = document.getElementById('menu-nav');
+    app.scrollBtn = document.getElementById("scroll-btn");
 
-}
-// Scroll Btn 
+    // Initialisation des fonctions
+    app.mainTitleAnnimation();
 
-const scrollBtn = document.getElementById("scroll-btn");
+    // Ajout des listeners
+    app.responsiveBtn.addEventListener('click', app.handleResponsiveBtn);
+    app.scrollBtn.addEventListener('click', app.handleScrollBtn, {passive:true});
+  },
 
-scrollBtn.addEventListener("click", () => {
+  handleResponsiveBtn: function () {
+    console.log('ok')
 
-  window.scroll(0, window.innerHeight)
-  console.log('scroll')
-}, {passive: true})
+    let scroll_btn = document.getElementById("scroll-btn")
+    let nav = document.getElementById("navbar");
+    if (nav.className === "nav__elts") {
+      scroll_btn.className += " responsive"
+      nav.className += " responsive";
+    } else {
+      nav.className = "nav__elts";
+      scroll_btn.className = "header-scroll-icon"
+    } 
+  },
 
-// Wrap every letter in a span
-let textWrapper = document.querySelector('.ml9 .letters');
+  handleScrollBtn: function () {
+    window.scroll(0, innerHeight);
+  },
+
+  mainTitleAnnimation: function () {
+    let textWrapper = document.querySelector('.ml9 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 anime.timeline({loop: false})
@@ -24,6 +42,9 @@ anime.timeline({loop: false})
     elasticity: 600,
     delay: (el, i) => 45 * (i+1)
   })
+
+  },
+}
 
 // Top-up Btn 
 
@@ -81,24 +102,10 @@ const options = {
   // RESPONSIVE MENU
 
   }
-
-  function responsive() {
-
-    let scroll_btn = document.getElementById("scroll-btn")
-    let nav = document.getElementById("navbar");
-    if (nav.className === "nav__elts") {
-      scroll_btn.className += " responsive"
-      nav.className += " responsive";
-    } else {
-      nav.className = "nav__elts";
-      scroll_btn.className = "header-scroll-icon"
-    } 
-  }
-
 // Vh 
 
 let vh = window.innerHeight * 0.01;
 
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-window.addEventListener('load', init);
+window.addEventListener('load', app.init());
