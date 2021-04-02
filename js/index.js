@@ -9,6 +9,7 @@ const app = {
     // Initialisation des fonctions
     app.mainTitleAnnimation();
     app.viewPortMobile();
+    app.handlePopUpEffect();
 
     // Ajout des listeners
     app.responsiveBtn.addEventListener('click', app.handleResponsiveBtn);
@@ -67,35 +68,36 @@ anime.timeline({loop: false})
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
   },
-}
 
-const ratio = 0.10
+  handlePopUpEffect: function () {
 
-const options = {
+    const ratio = 0.10
+    const options = {
 
-    root: null,
-    rootMargin: '0px',
-    threshold: ratio
-  }
-  let callback = function(entries, observer) { 
-    entries.forEach(entry => {
+        root: null,
+        rootMargin: '0px',
+        threshold: ratio
+      };
+    
+    let callback = function(entries, observer) { 
+      entries.forEach(entry => {
+          if (entry.intersectionRatio > ratio) {
+              entry.target.classList.add('reveal-visible')           
+          }
+      })
+  };
 
-        if (entry.intersectionRatio > ratio) {
-
-            entry.target.classList.add('reveal-visible')           
-        }
-    })
-  }
   let observer = new IntersectionObserver(callback, options);
-
-  let target = document.querySelectorAll("[class*=reveal-").forEach(function (r) {
-    observer.observe(r)
+  let target = document.querySelectorAll("[class*=reveal-").forEach(function (elt) {
+    observer.observe(elt)
   })
 
   try {
-
   observer.observe(target)
+  } catch(error) {}
+  },
 
-  } catch(error) {
+}
 
-  }
+
+addEventListener('load', app.init())
