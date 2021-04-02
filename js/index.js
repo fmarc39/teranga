@@ -85,16 +85,16 @@ anime.timeline({loop: false})
               entry.target.classList.add('reveal-visible')           
           }
       })
-  };
+    };
 
-  let observer = new IntersectionObserver(callback, options);
-  let target = document.querySelectorAll("[class*=reveal-").forEach(function (elt) {
-    observer.observe(elt)
-  })
+    let observer = new IntersectionObserver(callback, options);
+    let target = document.querySelectorAll("[class*=reveal-").forEach(function (elt) {
+      observer.observe(elt)
+    })
 
-  try {
-  observer.observe(target)
-  } catch(error) {}
+    try {
+    observer.observe(target)
+    } catch(error) {}
   },
 
 }
