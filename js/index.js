@@ -1,15 +1,20 @@
 const app = {
+
   init: function () {
     // Recuperation des elements du DOM
     app.responsiveBtn = document.getElementById('menu-nav');
     app.scrollBtn = document.getElementById("scroll-btn");
+    app.topUpBtn = document.getElementById('up-arrow');
 
     // Initialisation des fonctions
     app.mainTitleAnnimation();
+    app.viewPortMobile();
 
     // Ajout des listeners
     app.responsiveBtn.addEventListener('click', app.handleResponsiveBtn);
     app.scrollBtn.addEventListener('click', app.handleScrollBtn, {passive:true});
+    window.addEventListener('scroll', app.handleTopUpBtn, {passive:true});
+    app.topUpBtn.addEventListener('click', app.handleTopUpBtnClick, {passive:true});
   },
 
   handleResponsiveBtn: function () {
@@ -44,31 +49,25 @@ anime.timeline({loop: false})
   })
 
   },
+
+  handleTopUpBtn: function () {
+
+    (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) ? 
+    app.topUpBtn.style.display = 'block'
+    : app.topUpBtn.style.display = "non"  
+  },
+
+  handleTopUpBtnClick: function (){
+
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0; 
+  },
+
+  viewPortMobile: function () {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  },
 }
-
-// Top-up Btn 
-
-const topUpBtn = document.getElementById('up-arrow');
-
-window.addEventListener("scroll", () => {
-
-  if(document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
-
-    topUpBtn.style.display = 'block'
-  } else {
-
-    topUpBtn.style.display = "non"
-  }
-}, {passive: true})
-
-topUpBtn.addEventListener("click", () => {
-
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-
-}, {passive: true})
-
-// CREATION DE LA SECTION QUI VA PERMETTRE D'OBERSVER LA SCROLL DE LA PAGE ET DE FAIRE APPARAITRE LES EFFETS 
 
 const ratio = 0.10
 
@@ -99,13 +98,4 @@ const options = {
 
   } catch(error) {
 
-  // RESPONSIVE MENU
-
   }
-// Vh 
-
-let vh = window.innerHeight * 0.01;
-
-document.documentElement.style.setProperty('--vh', `${vh}px`);
-
-window.addEventListener('load', app.init());
