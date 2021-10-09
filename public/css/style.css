@@ -43,6 +43,10 @@ body {
   cursor: pointer;
 }
 
+#up-arrow {
+  cursor: pointer;
+}
+
 .showBtn {
   position: fixed;
   bottom: 30px;
@@ -126,6 +130,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
   height: calc(100vh - 8rem);
   padding-bottom: 2rem;
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
@@ -192,7 +197,7 @@ body {
 }
 
 .header-btn:hover {
-  color: black;
+  color: #032491;
 }
 
 .header-btn:hover:before {
@@ -654,11 +659,14 @@ body {
   body {
     font-size: 0.65em;
   }
+  .galery {
+    display: none;
+  }
   .header-scroll-icon {
     margin-top: 2rem;
   }
   .header-maintitle {
-    font-size: 8em;
+    font-size: 7em;
     background-position: unset;
   }
   .header-p {

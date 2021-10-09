@@ -6,7 +6,6 @@ const app = {
     app.topUpBtn = document.getElementById("up-arrow");
 
     // Initialisation des fonctions
-    app.mainTitleAnnimation();
     app.viewPortMobile();
     app.handlePopUpEffect();
 
@@ -35,22 +34,6 @@ const app = {
 
   handleScrollBtn: function () {
     window.scroll(0, innerHeight);
-  },
-
-  mainTitleAnnimation: function () {
-    let textWrapper = document.querySelector(".ml9 .letters");
-    textWrapper.innerHTML = textWrapper.textContent.replace(
-      /\S/g,
-      "<span class='letter'>$&</span>"
-    );
-
-    anime.timeline({ loop: false }).add({
-      targets: ".ml9 .letter",
-      scale: [0, 1],
-      duration: 2000,
-      elasticity: 600,
-      delay: (el, i) => 45 * (i + 1),
-    });
   },
 
   handleTopUpBtn: function () {
