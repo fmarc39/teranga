@@ -48,8 +48,8 @@ body {
 
 .swiper {
     display: none;
-}
 
+}
 
 .up-arrow {
 
@@ -147,6 +147,7 @@ body {
     flex-direction: column;
     align-items: center;
     overflow:hidden;
+    transition: all ease-in-out .3s;
     height: calc(100vh - 8rem);
     padding-bottom: $marginBottom;
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
@@ -287,6 +288,28 @@ body {
     width: auto;
     margin-bottom: $marginBottom;
 }
+
+// Swiper 
+
+.swiper {
+    width: 300px;
+    height: 400px;
+    margin: 0 0 5rem 0;
+  }
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+
+  }
+  .slider-img {
+      height: 400px;
+  }
 
 // Gallery
 
@@ -527,7 +550,7 @@ body {
     .nav__elts {
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35);
         transition: height 0.4s ease-in-out;
-        background-color: rgba(87, 87, 87, 0.479) ;
+        background-color: rgba(87, 87, 87, 0.4) ;
 
     }
     .nav__elts .elts {
@@ -536,7 +559,7 @@ body {
 
     .nav__elts.responsive li:first-child {
 
-        margin-top: 3.5rem;
+        margin-top: 2rem;
     }
 
     .nav__elts.responsive li{
@@ -545,7 +568,7 @@ body {
         flex-direction: column;
         margin-bottom: 1rem;
         margin-right: 0;
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         transition: .3s;
         
     }
@@ -769,6 +792,53 @@ body {
     }
 }
 
+@media (max-width: 530px) {
+
+.swiper {
+    width: 240px;
+    height: 360px;
+  }
+
+  .slider-img {
+      height: 360px;
+  }
+ }
+
+@media (max-width: 450px) { 
+
+    .swiper {
+        width: 210px;
+        height: 310px;
+      }
+    
+      .slider-img {
+          height: 310px;
+      }
+}
+
+@media (max-width: 400px) {
+    .swiper {
+        width: 201px;
+        height: 300px;
+      }
+    
+      .slider-img {
+          height: 300px;
+      }
+ }
+
+ @media (max-width: 350px) {
+    .swiper {
+        width: 160px;
+        height: 250px;
+      }
+    
+      .slider-img {
+          height: 250px;
+      }
+ }
+
+
 // ANNIMATION 
 
 @keyframes mover {
@@ -792,23 +862,3 @@ body {
         transform: translateY(0px)
     }
 }
-
-
-// Swiper 
-
-.swiper {
-        width: 250px;
-        height: 350px;
-        margin: 0 0 5rem 0;
-      }
-
-      .swiper-slide {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 10px;
-        font-size: 22px;
-        font-weight: bold;
-        color: #fff;
-
-      }
