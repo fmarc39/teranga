@@ -2,6 +2,7 @@ const app = {
   init: function () {
     // Recuperation des elements du DOM
     app.responsiveBtn = document.getElementById("menu-nav");
+    app.closeBtn = document.getElementById("menu-nav-close");
     app.scrollBtn = document.getElementById("scroll-btn");
     app.topUpBtn = document.getElementById("up-arrow");
 
@@ -11,6 +12,7 @@ const app = {
 
     // Ajout des listeners
     app.responsiveBtn.addEventListener("click", app.handleResponsiveBtn);
+    app.closeBtn.addEventListener("click", app.handleResponsiveBtn);
     app.scrollBtn.addEventListener("click", app.handleScrollBtn, {
       passive: true,
     });
@@ -22,13 +24,22 @@ const app = {
 
   handleResponsiveBtn: function () {
     let scroll_btn = document.getElementById("scroll-btn");
+    let responsivBtn = document.getElementById("menu-nav");
+    let closeBtn = document.getElementById("menu-nav-close");
     let nav = document.getElementById("navbar");
+    let headerContent = document.getElementById("header-content");
     if (nav.className === "nav__elts") {
       scroll_btn.className += " responsive";
       nav.className += " responsive";
+      responsivBtn.className += " close";
+      closeBtn.className = "open";
+      headerContent.classList.add("blurr");
     } else {
       nav.className = "nav__elts";
       scroll_btn.className = "header-scroll-icon";
+      responsivBtn.className = "open";
+      closeBtn.className = "close";
+      headerContent.classList.remove("blurr");
     }
   },
 

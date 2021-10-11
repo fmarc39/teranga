@@ -14,10 +14,7 @@
         <meta name="robots" content="index, follow">
         <meta name="author" content="françois marc">
         <title>La teranga - Restaurant</title>
-        <link
-        rel="stylesheet"
-        href="https://unpkg.com/swiper/swiper-bundle.min.css"
-      />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     </head>
     <body>
 
@@ -28,17 +25,18 @@
                     <li class="elts"> <a class='nav__elts-elt' href="#footer">Contact</a></li>
                     <li class="elts"> <a class='nav__elts-elt' href="./assets/menu/menu-ete-2021.pdf" target="blank">Menu</a></li>
                     <li class="elts"> <a class='nav__elts-elt' href="#map">Emplacement</a></li>
-                    <li class="elts"> <a class='nav__elts-elt' href="#galery">Galerie</a></li>
+                    <li class="elts"> <a class='nav__elts-elt' id='galery' href="#galery">Galerie</a></li>
                     <li id="phone"> 
                         <a href="tel:+33384601371" target="blank" title="telephone" alt='icone telephone'>
                         <img src="./assets/icons/telephone.svg" alt="" class="nav_elts phone">
                         </a>
                     </li>              
-                    <li> <button alt='icone bare de navigation' id="menu-nav"><img src="./assets/icons/menu.svg" alt="icone bare de navigation" class='nav_elts menu'></button></li>  
+                    <li> <button alt='icone bare de navigation' id="menu-nav"><img src="./assets/icons/menu.png" alt="icone bare de navigation" class='nav_elts menu'></button></li>
+                    <li> <button class="close" alt='icone bare de navigation' id="menu-nav-close"><img src="./assets/icons/close.png" alt="icone bare de navigation" class='nav_elts closeIcon'></button></li>
                 </ul>
             </nav>
 
-            <div class='header-content'>
+            <div class='header-content' id="header-content">
                 <h1 class="header-maintitle reveal- ">La teranga</h1>
                 <p class='header-p reveal-'>La Téranga signifie hospitalité en Wolof, langue sénégalaise. <br>
                     Elle est cette attitude qui fait que vous vous sous sentez <br>
@@ -83,28 +81,28 @@
 
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img loading="lazy" src="./assets/img/small/IMG-20200621-WA0000.webp" 
-                    srcset="
-                    ./assets/img/small/IMG-20200621-WA0000.webp 3x,
-                    ./assets/img/medium/IMG-20200621-WA0000.webp 2x,
-                    ./assets/img/large/IMG-20200621-WA0000.webp 1x"
-                    alt="image dessert parfait citron" class="slider-img"  width="contain">
-                  </div>
-                  <div class="swiper-slide">
-                    <img loading="lazy" src="./assets/img/small/IMG_20200620_132529.webp" srcset="
-                    ./assets/img/small/IMG_20200620_132529.webp 3x,
-                    ./assets/img/medium/IMG_20200620_132529.webp 2x,
-                    ./assets/img/large/IMG_20200620_132529.webp 1x" 
-                    alt="image frites" class="slider-img" >
-                  </div>
-                  <div class="swiper-slide">
-                    <img loading="lazy" src="./assets/img/small/IMG-20200621-WA0004.webp" srcset="
-                    ./assets/img/small/IMG-20200621-WA0004.webp 3x,
-                    ./assets/img/medium/IMG-20200621-WA0004.webp 2x,
-                    ./assets/img/large/IMG-20200621-WA0004.webp 1x" 
-                    alt="image assiette crevettes" class="slider-img" >
-                  </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="./assets/img/small/IMG-20200621-WA0000.webp" 
+                        srcset="
+                        ./assets/img/small/IMG-20200621-WA0000.webp 3x,
+                        ./assets/img/medium/IMG-20200621-WA0000.webp 2x,
+                        ./assets/img/large/IMG-20200621-WA0000.webp 1x"
+                        alt="image dessert parfait citron" class="slider-img"  width="contain">
+                    </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="./assets/img/small/IMG_20200620_132529.webp" srcset="
+                        ./assets/img/small/IMG_20200620_132529.webp 3x,
+                        ./assets/img/medium/IMG_20200620_132529.webp 2x,
+                        ./assets/img/large/IMG_20200620_132529.webp 1x" 
+                        alt="image frites" class="slider-img" >
+                    </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="./assets/img/small/IMG-20200621-WA0004.webp" srcset="
+                        ./assets/img/small/IMG-20200621-WA0004.webp 3x,
+                        ./assets/img/medium/IMG-20200621-WA0004.webp 2x,
+                        ./assets/img/large/IMG-20200621-WA0004.webp 1x" 
+                        alt="image assiette crevettes" class="slider-img" >
+                    </div>
                   <div class="swiper-slide">
                     <img loading="lazy" src="./assets/img/small/IMG_20200613_133013.webp" srcset="
                     ./assets/img/small/IMG_20200613_133013.webp 3x,
@@ -151,7 +149,6 @@
                 
                 <div class="column">
                     <img loading="lazy" src="./assets/img/small/creme_brule-large.webp" alt="image creme brule" class="img 1">
-
 
                     <img loading="lazy" src="./assets/img/small/IMG-20200621-WA0008.webp" 
                     srcset="

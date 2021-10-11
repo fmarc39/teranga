@@ -4,6 +4,7 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #F7F7F8;
 }
 
 ::-webkit-scrollbar {
@@ -75,7 +76,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.5em;
-  padding: 2rem;
+  padding-top: 1rem;
   overflow: hidden;
   -webkit-transition: .3s;
   transition: .3s;
@@ -94,9 +95,21 @@ body {
   display: none;
 }
 
-.phone, .menu {
+.phone {
   height: 3rem;
   width: auto;
+}
+
+.menu {
+  height: 1.8rem;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+
+.closeIcon {
+  height: 1.2rem;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
 }
 
 #phone {
@@ -113,10 +126,18 @@ body {
 }
 
 #menu-nav {
-  background-color: rgba(172, 172, 172, 0);
+  background-color: rgba(0, 0, 0, 0);
   border: none;
   position: absolute;
-  top: 2rem;
+  top: 2.5rem;
+  right: 1.5rem;
+}
+
+#menu-nav-close {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  position: absolute;
+  top: 2.5rem;
   right: 1.5rem;
 }
 
@@ -135,8 +156,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-  -webkit-transition: all ease-in-out .3s;
-  transition: all ease-in-out .3s;
+  z-index: -1;
+  overflow: hidden;
   height: calc(100vh - 8rem);
   padding-bottom: 2rem;
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
@@ -245,10 +266,10 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background-color: white;
+  background-color: #F7F7F8;
   padding: 10rem 10rem;
   color: black;
-  z-index: 0;
+  z-index: 1;
 }
 
 .services__elts {
@@ -316,6 +337,7 @@ body {
       flex-wrap: wrap;
   background-color: white;
   padding: 0rem 10rem 5rem 10rem;
+  background-color: #F7F7F8;
 }
 
 .column {
@@ -340,6 +362,11 @@ body {
           transform: scale(0.95);
 }
 
+iframe {
+  padding: .5rem;
+  border-radius: 30px;
+}
+
 .comments {
   background-color: white;
   display: -webkit-box;
@@ -348,6 +375,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-bottom: 2rem;
+  background-color: #F7F7F8;
 }
 
 .speech-bubble {
@@ -544,12 +572,14 @@ body {
     top: 2rem;
     left: 1.5rem;
   }
+  .header-nav {
+    -webkit-transition: all ease-in-out .5s;
+    transition: all ease-in-out .5s;
+  }
   .nav__elts {
-    -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35);
-            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35);
-    -webkit-transition: height 0.4s ease-in-out;
-    transition: height 0.4s ease-in-out;
-    background-color: rgba(87, 87, 87, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-transition: all ease-in-out .3s;
+    transition: all ease-in-out .3s;
   }
   .nav__elts .elts {
     -webkit-animation: opacity 1s;
@@ -580,11 +610,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.74);
-            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.74);
-    background: rgba(51, 51, 51, 0.479);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.7);
   }
   .header-scroll-icon.responsive {
     display: none;
@@ -608,6 +634,19 @@ body {
         -ms-flex: 100%;
             flex: 100%;
     max-width: 100%;
+  }
+  .close {
+    opacity: 0;
+    display: none;
+    -webkit-transition: all ease-in-out .3s;
+    transition: all ease-in-out .3s;
+  }
+  .open {
+    opacity: 1;
+  }
+  .blurr {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
   }
   .comments__avis {
     top: 110px;
@@ -648,6 +687,14 @@ body {
 @media (max-width: 800px) {
   .header {
     background-image: url("../assets//img//medium/bg_img-med.webp");
+  }
+  .header-content {
+    -webkit-transition: height 0.4s ease-in-out;
+    transition: height 0.4s ease-in-out;
+    -webkit-transition: -webkit-filter ease-in-out .3s;
+    transition: -webkit-filter ease-in-out .3s;
+    transition: filter ease-in-out .3s;
+    transition: filter ease-in-out .3s, -webkit-filter ease-in-out .3s;
   }
   body {
     font-size: 0.75em;
