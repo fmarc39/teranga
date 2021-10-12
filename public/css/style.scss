@@ -202,6 +202,7 @@ body {
     background-color: white;
     border-radius: 30px;
     font-size: $medFont;
+    font-weight: bold;
     height: 60px;
     width: 120px;
     color: black;
@@ -279,7 +280,6 @@ body {
     padding: 10rem 10rem;
     color: black;
     z-index: 1;
-
 }
 
 .services__elts {
@@ -583,7 +583,7 @@ iframe {
 
     }
     .nav__elts .elts {
-        animation: opacity 1s;
+        animation: opacity .5s;
     }
 
     .nav__elts.responsive li:first-child {
@@ -843,11 +843,11 @@ iframe {
 
 .swiper {
     width: 240px;
-    height: 360px;
+    height: 320px;
   }
 
   .slider-img {
-      height: 360px;
+      height: 320px;
   }
  }
 
@@ -855,33 +855,33 @@ iframe {
 
     .swiper {
         width: 210px;
-        height: 310px;
+        height: 280px;
       }
     
       .slider-img {
-          height: 310px;
+          height: 280px;
       }
 }
 
 @media (max-width: 400px) {
     .swiper {
-        width: 201px;
-        height: 300px;
+        width: 200px;
+        height: 267px;
       }
     
       .slider-img {
-          height: 300px;
+          height: 267px;
       }
  }
 
  @media (max-width: 350px) {
     .swiper {
         width: 160px;
-        height: 250px;
+        height: 210px;
       }
     
       .slider-img {
-          height: 250px;
+          height: 210px;
       }
  }
 

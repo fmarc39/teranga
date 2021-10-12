@@ -188,6 +188,7 @@ body {
   background-color: white;
   border-radius: 30px;
   font-size: 1.5em;
+  font-weight: bold;
   height: 60px;
   width: 120px;
   color: black;
@@ -582,8 +583,8 @@ iframe {
     transition: all ease-in-out .3s;
   }
   .nav__elts .elts {
-    -webkit-animation: opacity 1s;
-            animation: opacity 1s;
+    -webkit-animation: opacity .5s;
+            animation: opacity .5s;
   }
   .nav__elts.responsive li:first-child {
     margin-top: 2rem;
@@ -786,40 +787,40 @@ iframe {
 @media (max-width: 530px) {
   .swiper {
     width: 240px;
-    height: 360px;
+    height: 320px;
   }
   .slider-img {
-    height: 360px;
+    height: 320px;
   }
 }
 
 @media (max-width: 450px) {
   .swiper {
     width: 210px;
-    height: 310px;
+    height: 280px;
   }
   .slider-img {
-    height: 310px;
+    height: 280px;
   }
 }
 
 @media (max-width: 400px) {
   .swiper {
-    width: 201px;
-    height: 300px;
+    width: 200px;
+    height: 267px;
   }
   .slider-img {
-    height: 300px;
+    height: 267px;
   }
 }
 
 @media (max-width: 350px) {
   .swiper {
     width: 160px;
-    height: 250px;
+    height: 210px;
   }
   .slider-img {
-    height: 250px;
+    height: 210px;
   }
 }
 

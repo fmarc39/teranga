@@ -28,6 +28,7 @@ const app = {
     let closeBtn = document.getElementById("menu-nav-close");
     let nav = document.getElementById("navbar");
     let headerContent = document.getElementById("header-content");
+
     if (nav.className === "nav__elts") {
       scroll_btn.className += " responsive";
       nav.className += " responsive";
