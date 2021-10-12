@@ -441,6 +441,11 @@ iframe {
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.mySlided-img {
+  border-radius: 15px;
+  width: 100%;
+}
+
 .mySlides {
   display: none;
 }
@@ -453,18 +458,20 @@ iframe {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 40%;
+  top: 45%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
   color: black;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
   border-radius: 0 3px 3px 0;
   -moz-user-select: none;
    -ms-user-select: none;
        user-select: none;
   -webkit-user-select: none;
+  -webkit-transition: ease-in-out all .2s;
+  transition: ease-in-out all .2s;
 }
 
 .next {
@@ -475,6 +482,7 @@ iframe {
 .prev:hover,
 .next:hover {
   background-color: rgba(163, 163, 163, 0.8);
+  color: white;
 }
 
 .numbertext {
