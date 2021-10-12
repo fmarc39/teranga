@@ -78,15 +78,11 @@ body {
   font-size: 1.5em;
   padding-top: 1rem;
   overflow: hidden;
-  -webkit-transition: .3s;
-  transition: .3s;
   min-height: 7rem;
 }
 
 .nav__elts li {
   margin-right: 6rem;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
   cursor: pointer;
 }
 
@@ -218,8 +214,6 @@ body {
   width: 0%;
   height: 100%;
   background-color: #adadad;
-  -webkit-transition: all .3s;
-  transition: all .3s;
   border-radius: 30px;
   z-index: -1;
 }
@@ -386,6 +380,9 @@ iframe {
 .avatar {
   height: 150px;
   margin-right: 320px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 20px;
 }
 
 .comments__elts {
@@ -433,6 +430,72 @@ iframe {
 .quote {
   font-weight: bold;
   font-size: 1.3rem;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+  margin: 4em  auto 0 auto;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(163, 163, 163, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .map {
@@ -646,8 +709,8 @@ iframe {
     opacity: 1;
   }
   .blurr {
-    -webkit-filter: blur(5px);
-            filter: blur(5px);
+    -webkit-filter: blur(3px);
+            filter: blur(3px);
   }
   .comments__avis {
     top: 110px;
@@ -697,6 +760,9 @@ iframe {
     transition: filter ease-in-out .3s;
     transition: filter ease-in-out .3s, -webkit-filter ease-in-out .3s;
   }
+  .container {
+    width: 66%;
+  }
   body {
     font-size: 0.75em;
   }
@@ -735,6 +801,9 @@ iframe {
 @media (max-width: 600px) {
   .header {
     background-image: url("../assets//img/small/bg_img-small.webp");
+  }
+  .container {
+    width: 75%;
   }
   .swiper {
     display: block;
@@ -788,6 +857,9 @@ iframe {
   .swiper {
     width: 240px;
     height: 320px;
+  }
+  .container {
+    width: 95%;
   }
   .slider-img {
     height: 320px;

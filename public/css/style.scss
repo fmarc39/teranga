@@ -47,7 +47,6 @@ body {
 
 .swiper {
     display: none;
-
 }
 
 .up-arrow {
@@ -88,13 +87,11 @@ body {
     font-size: $medFont;
     padding-top: 1rem;
     overflow: hidden;
-    transition: .3s;
     min-height: 7rem;
 
     li {
 
         margin-right: 6rem;
-        transition: 0.3s;
         cursor: pointer;     
     }
 
@@ -229,7 +226,6 @@ body {
         width: 0%;
         height: 100%;
         background-color: rgb(173, 173, 173);
-        transition: all .3s;
         border-radius: 30px;
         z-index: -1;
     }
@@ -387,6 +383,8 @@ iframe {
 
     height: 150px;
     margin-right: 320px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 20px;
 }
 
 .comments__elts {
@@ -433,6 +431,73 @@ iframe {
     font-size: 1.3rem;
 
 }
+
+
+
+// Caroussel
+
+.container {
+    position: relative;
+    width: 50%;
+    margin: 4em  auto 0 auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .cursor {
+    cursor: pointer;
+  }
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(163, 163, 163, 0.8);
+  }
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
 
 // Map
@@ -650,7 +715,7 @@ iframe {
 }
 
 .blurr {
-    filter: blur(5px);
+    filter: blur(3px);
 }
 
     .comments__avis {
@@ -716,6 +781,11 @@ iframe {
         transition: filter ease-in-out .3s;
     }
 
+    .container {
+    
+        width: 66%;
+      }
+
     body {
 
         font-size: 0.75em;
@@ -773,6 +843,11 @@ iframe {
 
         background-image: url('../assets//img/small/bg_img-small.webp');
     }
+
+    .container {
+    
+        width: 75%;
+      }
 
     .swiper {
         display: block;
@@ -846,6 +921,11 @@ iframe {
     height: 320px;
   }
 
+  .container {
+    
+    width: 95%;
+  }
+
   .slider-img {
       height: 320px;
   }
@@ -909,3 +989,4 @@ iframe {
         transform: translateY(0px)
     }
 }
+
