@@ -31,8 +31,8 @@
                         <img src="./assets/icons/telephone.svg" alt="" class="nav_elts phone">
                         </a>
                     </li>              
-                    <li> <button alt='icone bare de navigation' id="menu-nav"><img src="./assets/icons/menu.png" alt="icone bare de navigation" class='nav_elts menu'></button></li>
-                    <li> <button class="close" alt='icone bare de navigation' id="menu-nav-close"><img src="./assets/icons/close.png" alt="icone bare de navigation" class='nav_elts closeIcon'></button></li>
+                    <li> <button id="menu-nav"><img src="./assets/icons/menu.png" alt="icone bare de navigation" class='nav_elts menu'></button></li>
+                    <li> <button class="close" id="menu-nav-close"><img src="./assets/icons/close.png" alt="icone fermeture menu" class='nav_elts closeIcon'></button></li>
                 </ul>
             </nav>
 
@@ -224,9 +224,11 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2751.882681973881!2d5.862628515588757!3d46.391551879122865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ced6249e996d1%3A0xc1aed282cd4d14d6!2sLa%20T%C3%A9ranga!5e0!3m2!1sfr!2sfr!4v1609443270993!5m2!1sfr!2sfr" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="map" id="map" title="carte_google"></iframe>
 
             <div class="container" id="menuContainer">
+                <a class="container-dl-btn" href="./assets/menu/menu-automne-21.pdf" target="blank"><img class="container-dl-icon" src="./assets/icons/dowload.png"></a>
 
                 <!-- Full-width images with number text -->
                 <div class="mySlides">
+                    
                   <div class="numbertext">1 / 9</div>
                     <img src="./assets/menu/menu-automne-21/menu-automne-21-page-001.jpg" class="mySlided-img">
                 </div>
@@ -380,7 +382,7 @@
             }
         </script>
 
-            <script src="/dist/bundle.js"></script>
+            <script src="./js/index.js"></script>
             <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
             <script>
                 var swiper = new Swiper(".mySwiper", {
@@ -441,8 +443,6 @@ function showSlides(n) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
 }
         </script>
     </body>

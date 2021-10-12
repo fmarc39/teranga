@@ -436,9 +436,28 @@ iframe {
   position: relative;
   width: 50%;
   margin: 4em  auto 0 auto;
+  border-radius: 15px;
+  background-color: white;
+  -webkit-box-shadow: #26394d 0px 20px 30px -10px;
+          box-shadow: #26394d 0px 20px 30px -10px;
+}
+
+.container-dl-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.container-dl-icon {
+  height: 4em;
+  background-color: rgba(141, 141, 141, 0.3);
   border-radius: 10px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  -webkit-transition: background-color ease-in-out .3s;
+  transition: background-color ease-in-out .3s;
+}
+
+.container-dl-icon:hover {
+  background-color: rgba(141, 141, 141, 0.6);
 }
 
 .mySlided-img {
@@ -448,6 +467,7 @@ iframe {
 
 .mySlides {
   display: none;
+  border-radius: 15px;
 }
 
 .cursor {
@@ -464,7 +484,7 @@ iframe {
   margin-top: -50px;
   color: black;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 2em;
   border-radius: 0 3px 3px 0;
   -moz-user-select: none;
    -ms-user-select: none;
