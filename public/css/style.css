@@ -48,6 +48,10 @@ body {
   cursor: pointer;
 }
 
+.svg {
+  margin-top: -300px;
+}
+
 #up-arrow {
   cursor: pointer;
 }
@@ -91,9 +95,41 @@ body {
   display: none;
 }
 
+.elts {
+  position: relative;
+}
+
+a.nav__elts-elt:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  border-radius: 5px;
+  background-color: white;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+a.nav__elts-elt:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
 .phone {
   height: 3rem;
   width: auto;
+  -webkit-transition: -webkit-transform  .3s ease-in-out;
+  transition: -webkit-transform  .3s ease-in-out;
+  transition: transform  .3s ease-in-out;
+  transition: transform  .3s ease-in-out, -webkit-transform  .3s ease-in-out;
+}
+
+.phone:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .menu {
@@ -160,7 +196,7 @@ body {
 }
 
 .header-maintitle {
-  font-size: 8em;
+  font-size: 7em;
   margin-bottom: 2rem;
   font-weight: bold;
 }
@@ -358,8 +394,10 @@ body {
 }
 
 iframe {
+  border-radius: 50px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   padding: .5rem;
-  border-radius: 30px;
 }
 
 .comments {
@@ -436,10 +474,6 @@ iframe {
   position: relative;
   width: 50%;
   margin: 4em  auto 0 auto;
-  border-radius: 15px;
-  background-color: white;
-  -webkit-box-shadow: #26394d 0px 20px 30px -10px;
-          box-shadow: #26394d 0px 20px 30px -10px;
 }
 
 .container-dl-btn {
@@ -457,17 +491,18 @@ iframe {
 }
 
 .container-dl-icon:hover {
-  background-color: rgba(141, 141, 141, 0.6);
+  background-color: rgba(141, 141, 255, 0.6);
 }
 
 .mySlided-img {
-  border-radius: 15px;
   width: 100%;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .mySlides {
   display: none;
-  border-radius: 15px;
 }
 
 .cursor {
@@ -506,8 +541,8 @@ iframe {
 }
 
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
+  color: #727272;
+  font-size: 1em;
   padding: 8px 12px;
   position: absolute;
   top: 0;
