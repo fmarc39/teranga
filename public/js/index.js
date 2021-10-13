@@ -5,6 +5,8 @@ const app = {
     app.closeBtn = document.getElementById("menu-nav-close");
     app.scrollBtn = document.getElementById("scroll-btn");
     app.topUpBtn = document.getElementById("up-arrow");
+    app.loadingScreen = document.getElementById("loading");
+    app.headerDiv = document.getElementById("header");
 
     // Initialisation des fonctions
     app.viewPortMobile();
@@ -93,4 +95,16 @@ const app = {
   },
 };
 
-addEventListener("load", app.init());
+// Gestion de l'affichage du DOM au loading de la page
+
+document.onreadystatechange = function () {
+  if (document.readyState !== "complete") {
+    app.init();
+    app.loadingScreen.classList.remove("hiden");
+    app.headerDiv.classList.add("hiden");
+  } else {
+    app.init();
+    app.loadingScreen.className = "hiden";
+    app.headerDiv.classList.remove("hiden");
+  }
+};

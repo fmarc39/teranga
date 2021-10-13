@@ -43,6 +43,30 @@ body {
     z-index: 1;
 }
 
+// Hidde 
+
+.hiden {
+
+    display: none;
+}
+
+.loading-screen {
+    z-index: 9999;
+    min-height: 100vh;
+    background-color: white ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__logo__animated {
+
+    height: 10rem;
+    background-color:white;
+    padding: 0.6rem
+}
+
+
 // Swiper 
 
 .swiper {
@@ -195,8 +219,8 @@ a.nav__elts-elt:hover:before {
     height: calc(100vh - 8rem);
     padding-bottom: $marginBottom;
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-             0px 8px 13px rgba(0,0,0,0.1),
-             0px 18px 23px rgba(0,0,0,0.1);
+    0px 8px 13px rgba(0,0,0,0.1),
+    0px 18px 23px rgba(0,0,0,0.1);
 }
 
 .header-maintitle {
@@ -1015,7 +1039,7 @@ iframe {
  }
 
 
-// ANNIMATION 
+// ANNIMATIONS
 
 @keyframes mover {
     0% {
@@ -1036,6 +1060,18 @@ iframe {
 
     100% {
         transform: translateY(0px)
+    }
+}
+
+@keyframes rotate {
+    from {
+
+        transform: rotate(0deg);
+    }
+
+    to {
+
+        transform: rotate(360deg) scale(1);
     }
 }
 
