@@ -104,7 +104,7 @@ document.onreadystatechange = function () {
     app.headerDiv.classList.add("hiden");
   } else {
     app.init();
-    app.loadingScreen.className = "hiden";
+    app.loadingScreen.className = "hiden fadeInOut";
     app.headerDiv.classList.remove("hiden");
   }
 };

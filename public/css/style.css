@@ -228,10 +228,16 @@ a.nav__elts-elt:hover:before {
 
 .header-maintitle-ml {
   text-align: center;
-  margin-bottom: 2rem auto;
+  padding: 2rem auto;
   font-size: 5em;
   margin-bottom: 2rem;
   font-weight: bold;
+}
+
+.header-ml {
+  background: F7F7F8;
+  color: white;
+  background-image: url(../assets/img/large/bg_img-large.webp);
 }
 
 .header-p {
