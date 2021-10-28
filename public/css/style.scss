@@ -446,8 +446,9 @@ iframe {
 
     height: 150px;
     margin-right: 320px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     border-radius: 20px;
+    -webkit-filter: drop-shadow( 5px 5px 3px rgba(0, 0, 0, .5));
+    filter: drop-shadow( 4px 4px 3px rgba(0, 0, 0, .5));
 }
 
 .comments__elts {
